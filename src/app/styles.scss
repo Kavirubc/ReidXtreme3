@@ -20,8 +20,11 @@ nav {
     width: 100vw;
     height: 80px;
     background-color: transparent;
-    z-index: 1;
+    z-index: 2;
     transition: background-color 0.5s ease;
+
+    justify-content: space-between;
+    padding: 20px;
 
     &.nav-scroll {
         background-color: #1e1f22;
@@ -30,6 +33,19 @@ nav {
         -webkit-backdrop-filter: blur(5px);
         backdrop-filter: blur(5px);
     }
+
+    button {
+        border: 2px solid #136d50;
+        background-color: transparent;
+        color: white;
+        transition: background-color 0.5s ease;
+        padding: 5px 30px;
+        border-radius: 5px;
+
+        &:hover {
+            background-color: #136d50;
+        }
+    }
 }
 
 .logo {
@@ -37,4 +53,33 @@ nav {
     margin-left: 50%;
     transform: translateX(-50%);
     margin-top: 200px;
+}
+
+.cloud {
+    opacity: 0.2;
+    filter: grayscale(100%);
+
+    min-height: 100vh;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax {
+    position: absolute;
+    z-index: 1;
+    width: 100vw;
+    height: 100vh;
+    opacity: 0.05;
+    top: 0;
+    background-image: url('/cloud.png');
+    filter: grayscale(100%);
+    backdrop-filter: grayscale(100%);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }

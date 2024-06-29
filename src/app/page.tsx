@@ -23,7 +23,13 @@ function Navbar() {
 
     return (
         <nav>
-
+            <Image
+                src="/logo.png"
+                alt="ReidExtreme Logo"
+                height={50}
+                width={81}
+            />
+            <RegisterButton/>
         </nav>
     );
 }
@@ -35,10 +41,13 @@ export default function Home() {
             <Navbar/>
             <Image
                 src="/background.png"
-                alt="Vercel Logo"
+                alt="Background img"
                 layout='fill'
                 objectFit='cover' priority
             />
+            <div className={"parallax"}>
+
+            </div>
             <Image
                 src="/logo.png"
                 alt="ReidExtreme Logo"
