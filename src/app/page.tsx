@@ -6,6 +6,7 @@ import Navbar from "@/components/navbar";
 import {Hero} from "@/components/hero";
 import dragon from "../../public/hero_bg.png";
 import React from "react";
+import {CTA} from "@/components/cta";
 
 
 export default function Home() {
@@ -16,6 +17,7 @@ export default function Home() {
             <div
                 className={"dragon"}
               />
+            <CTA />
         </main>
     );
 }

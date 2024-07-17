@@ -4,7 +4,7 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #1e1f22;
+    background-color: #000000;
     width: 100%;
     overflow-x: hidden;
   height: 2000px;
@@ -62,4 +62,11 @@ nav {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.intro {
+  max-width: 800px;
+  padding: 20px;
+  text-align: center;
+  justify-content: center;
 }
