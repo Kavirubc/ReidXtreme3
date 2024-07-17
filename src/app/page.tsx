@@ -3,26 +3,19 @@
 import Image from "next/image"
 import './styles.scss'
 import Navbar from "@/components/navbar";
+import {Hero} from "@/components/hero";
+import dragon from "../../public/hero_bg.png";
+import React from "react";
 
 
 export default function Home() {
     return (
-        <main>
+        <main className={'dark'}>
             <Navbar />
-            <Image
-                src="/hero_bg.png"
-                alt="Vercel Logo"
-                layout='fill'
-                objectFit='cover' priority
-                className={"hero-bg"}
-            />
-            <Image
-                src="/logo.png"
-                alt="ReidExtreme Logo"
-                width={200}
-                height={200}
-                className={"logo"}
-            />
+            <Hero />
+            <div
+                className={"dragon"}
+              />
         </main>
     );
 }
