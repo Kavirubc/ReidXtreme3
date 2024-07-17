@@ -2,11 +2,13 @@
 
 import Image from "next/image"
 import './styles.scss'
+import Navbar from "@/components/navbar";
 
 
 export default function Home() {
     return (
         <main>
+            <Navbar />
             <Image
                 src="/hero_bg.png"
                 alt="Vercel Logo"
