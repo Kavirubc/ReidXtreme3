@@ -12,6 +12,7 @@ import Navbar from "@/components/navbar";
 import {Hero} from "@/components/hero";
 import dragon from "../../public/hero_bg.png";
 import {CTA} from "@/components/cta";
+import {Timeline} from "@/components/timeline";
 
 
 export default function Home() {
@@ -21,8 +22,9 @@ export default function Home() {
             <Hero />
             <div
                 className={"dragon"}
-              />
+            />
             <CTA />
+            <Timeline />
             <Prizes />
             <FAQ />
             <Footer />
