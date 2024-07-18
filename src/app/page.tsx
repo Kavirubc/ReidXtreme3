@@ -6,17 +6,26 @@ import Footer from '../components/footer';
 import Gallery from '../components/gallery';
 import Test from '@/components/test';
 
-// import './styles.scss'
+import Image from "next/image"
+import './styles.scss'
+import Navbar from "@/components/navbar";
+import {Hero} from "@/components/hero";
+import dragon from "../../public/hero_bg.png";
+import {CTA} from "@/components/cta";
+
 
 export default function Home() {
     return (
-        <div className=''>
-            {/* <Test /> */}
-
+        <main className={'dark'}>
+            <Navbar />
+            <Hero />
+            <div
+                className={"dragon"}
+              />
+            <CTA />
             <Prizes />
             <FAQ />
-            {/* <Gallery /> */}
             <Footer />
-        </div>
+        </main>
     );
 }
