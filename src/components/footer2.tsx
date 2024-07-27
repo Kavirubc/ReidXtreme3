@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { FaFacebook, FaInstagram, FaLinkedin } from 'react-icons/fa'; 
+import { FaFacebook, FaInstagram, FaLinkedin } from 'react-icons/fa';
 import Image from 'next/image';
 
 const Footer = () => {
@@ -8,39 +8,30 @@ const Footer = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5 }}
-            className="bg-black py-8"
+            className="bg-black pb-5"
         >
             <div className="container mx-auto px-4">
                 <motion.div
                     initial={{ opacity: 0, y: 50 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5 }}
-                    className="flex justify-center space-x-8 mb-8 gap-10"
+                    className="flex flex-col md:flex-row justify-center gap-y-1 md:gap-x-24 items-center"
                 >
-                    <Image src="/acm.png" alt="ACM Logo" width={400} height={500} />
-                    <Image src="/ieee.png" alt="IEEE Logo" width={300} height={400} />
+                    <Image src="/acm.png" alt="ACM Logo" width={200} height={200} />
+                    <Image src="/ieee.png" alt="IEEE Logo" width={200} height={200} />
                 </motion.div>
 
                 <motion.div
                     initial={{ opacity: 0, y: 50 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.7 }}
-                    className="text-center mb-8 text-white"
-                >
-                    <p className='font-des text-xl tracking-wide'>ReidXtreme Competitive Programming is organized by the ACM Student Chapter of UCSC, in collaboration with the IEEE Student Branch of UCSC.</p>
-                </motion.div>
-
-                <motion.div
-                    initial={{ opacity: 0, y: 50 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.9 }}
-                    className="flex justify-center items-center mb-8 text-gray-700"
+                    className="flex justify-center md:gap-x-5 items-center mb-8 text-gray-700 space-x-4 md:space-x-0 md:flex-row"
                 >
                     <a
                         href="https://www.facebook.com/ucsc.acm"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="hover:text-blue-700 mr-4"
+                        className="hover:text-blue-700"
                     >
                         <FaFacebook className="text-white hover:text-blue-700" size={25} />
                     </a>
@@ -48,7 +39,7 @@ const Footer = () => {
                         href="https://www.instagram.com/ucsc.acm/"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="hover:text-pink-600 mr-4"
+                        className="hover:text-pink-600"
                     >
                         <FaInstagram className="text-white hover:text-pink-600" size={25} />
                     </a>
@@ -56,7 +47,7 @@ const Footer = () => {
                         href="https://www.linkedin.com/company/ucsc-acm/"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="hover:text-cyan-500 mr-4"
+                        className="hover:text-cyan-500"
                     >
                         <FaLinkedin className="text-white hover:text-cyan-500" size={25} />
                     </a>
@@ -65,10 +56,10 @@ const Footer = () => {
                 <motion.div
                     initial={{ opacity: 0, y: 50 }}
                     animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 1.1 }}
-                    className="text-center text-gray-700 hover:text-gray-300"
+                    transition={{ duration: 0.9 }}
+                    className="text-center text-gray-300 hover:text-secondary mt-4 md:mt-0" 
                 >
-                    <p className='font-des'>© {new Date().getFullYear()} ReidXtreme All Rights Reserved.</p>
+                    <p className='font-des'>© {new Date().getFullYear()} ReidXtreme - All Rights Reserved.</p>
                 </motion.div>
             </div>
         </motion.footer>
