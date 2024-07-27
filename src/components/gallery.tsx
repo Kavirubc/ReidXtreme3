@@ -40,7 +40,7 @@ const FAQ: React.FC = () => {
                                     whileHover={{ scale: 1.0 }}
                                     whileTap={{ scale: 0.95 }}
                                 >
-                                    <div className="relative w-full h-0 pb-[60%]"> {/* aspect ratio container */}
+                                    <div className="relative w-full h-0 pb-[60%]"> 
                                         <Image
                                             src={src}
                                             alt={`Gallery image ${index + 1}`}
