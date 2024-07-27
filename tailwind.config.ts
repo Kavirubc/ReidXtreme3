@@ -29,11 +29,13 @@ const config: Config = {
         primary: '#131313',
         secondary: '#008A5F',
         tertiary: '#062C20',
+        yg: '#ffbc40',
       },
       fontFamily: {
         des: ['Raleway', 'sans-serif'],
         zin: ['Zenzai Itachi', 'serif'],
-        bruno: ['BrunoAceSc', 'serif']
+        bruno: ['BrunoAceSc', 'serif'],
+
       },
       "animation": {
         shimmer: "shimmer 2s linear infinite"
@@ -51,7 +53,7 @@ const config: Config = {
     },
   },
   plugins: [
-      addVariablesForColors,
+    addVariablesForColors,
   ],
 };
 
