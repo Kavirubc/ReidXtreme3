@@ -1,8 +1,8 @@
 'use client'
 import React from 'react';
-import Prizes from '../components/prize';
-import FAQ from '../components/faq';
-import Footer from '../components/footer';
+import Prizes from '../components/prize2';
+import FAQ from '../components/faq2';
+import Footer from '../components/footer2';
 import Gallery from '../components/gallery';
 import Test from '@/components/test';
 
