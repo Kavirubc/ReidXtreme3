@@ -2,7 +2,7 @@
 import { motion } from 'framer-motion';
 import { useState } from 'react';
 import Navbar from '@/components/navbar';
-import Footer from '@/components/footer';
+import Footer from '@/components/footer2';
 
 const RegistrationForm = () => {
     const [formData, setFormData] = useState({
