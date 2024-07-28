@@ -6,7 +6,7 @@ import Head from 'next/head';
 import Navbar from '@/components/navbar';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
-import Footer from '@/components/footer';
+import Footer from '@/components/footer2';
 
 const ContactUs = () => {
     return (
