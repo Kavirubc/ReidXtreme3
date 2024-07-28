@@ -40,7 +40,8 @@ nav {
 }
 
 .hero {
-  //margin-top: 100px;
+  height: 100vh;
+  padding-top: 400px;
 }
 
 .hero .heading {
@@ -55,7 +56,7 @@ nav {
   width: 100vw;
   height: 100vh;
   top:-0;
-  opacity: 0.1;
+  opacity: 0.15;
   background-image: url('/hero_bg.png');
   backdrop-filter: grayscale(100%);
     background-attachment: fixed;
