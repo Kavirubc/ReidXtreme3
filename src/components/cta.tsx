@@ -21,9 +21,9 @@ export function CTA() {
     },
   ];
   return (
-    <div className="cta flex flex-col items-center justify-center h-[40rem]  ">
+    <div className="cta flex flex-col items-center justify-center h-[20rem]  ">
       <p className="intro text-neutral-600 dark:text-neutral-200 text-xs sm:text-base  ">
-        Join ReidXtreme 3.0, a premier competitive programming hackathon by the IEEE and ACM Student Chapters of UCSC. This event features two rounds: an initial qualifying round to showcase your coding skills, and a 12-hour final round hackathon for the top 10 teams. Compete, collaborate, and elevate your programming prowess in an exciting, in-person environment.
+        A premier competitive programming hackathon by the IEEE and ACM Student Chapters of UCSC
       </p>
       <TypewriterEffectSmooth words={words} />
       <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 space-x-0 md:space-x-4">

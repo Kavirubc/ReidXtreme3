@@ -4,23 +4,80 @@ import { PinContainer } from "./ui/3d-pin";
 
 export function Timeline() {
   return (
-    <div className="h-[40rem] w-full flex items-center justify-center ">
-      <PinContainer
-        title="/ui.aceternity.com"
-        href="https://twitter.com/mannupaaji"
-      >
-        <div className="flex basis-full flex-col p-4 tracking-tight text-slate-100/50 sm:basis-1/2 w-[20rem] h-[20rem] ">
-          <h3 className="max-w-xs !pb-2 !m-0 font-bold  text-base text-slate-100">
-            Aceternity UI
-          </h3>
-          <div className="text-base !m-0 !p-0 font-normal">
-            <span className="text-slate-500 ">
-              Customizable Tailwind CSS and Framer Motion Components.
-            </span>
-          </div>
-          <div className="flex flex-1 w-full rounded-lg mt-4 bg-gradient-to-br from-violet-500 via-purple-500 to-blue-500" />
+      <section>
+        <div className="flex flex-col items-center pt-5 font-bruno tracking-widest">
+          <h2 className="mt-5 text-center text-3xl font-bold  md:text-5xl">Timeline</h2>
         </div>
-      </PinContainer>
-    </div>
+        <div className="w-full flex items-center justify-center pt-10">
+          <div className="container-fluid">
+            <div className="row example-centered">
+              <div className="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2">
+                <ul className="timeline timeline-centered">
+                  <li className="timeline-item">
+                    <div className="timeline-info">
+                      <span>August 21, 20124</span>
+                    </div>
+                    <div className="timeline-marker"></div>
+                    <div className="timeline-content">
+                      <h3 className="timeline-title">Workshop 1</h3>
+                      <p>Nullam vel sem. Nullam vel sem. Integer ante arcu, accumsan a,
+                        consectetuer eget, posuere ut,
+                        mauris.</p>
+                    </div>
+                  </li>
+                  <li className="timeline-item">
+                    <div className="timeline-info">
+                      <span>August 23, 2024</span>
+                    </div>
+                    <div className="timeline-marker"></div>
+                    <div className="timeline-content">
+                      <h3 className="timeline-title">Workshop 2</h3>
+                      <p>Nullam vel sem. Nullam vel sem. Integer ante arcu,
+                        accumsan a, consectetuer eget, posuere ut,
+                        mauris. </p>
+                    </div>
+                  </li>
+                  <li className="timeline-item">
+                    <div className="timeline-info">
+                      <span>August 24, 2024</span>
+                    </div>
+                    <div className="timeline-marker"></div>
+                    <div className="timeline-content">
+                      <h3 className="timeline-title">Initial Round</h3>
+                      <p>Nullam vel sem. Nullam vel sem. Integer ante arcu,
+                        accumsan a, consectetuer eget, posuere ut,
+                        mauris. </p>
+                    </div>
+                  </li>
+                  <li className="timeline-item">
+                    <div className="timeline-info">
+                      <span>August 30, 2024</span>
+                    </div>
+                    <div className="timeline-marker"></div>
+                    <div className="timeline-content">
+                      <h3 className="timeline-title">Final Round Awareness Session</h3>
+                      <p>Nullam vel sem. Nullam vel sem. Integer ante arcu,
+                        accumsan a, consectetuer eget, posuere ut,
+                        mauris. </p>
+                    </div>
+                  </li>
+                  <li className="timeline-item">
+                    <div className="timeline-info">
+                      <span>August 31, 2024</span>
+                    </div>
+                    <div className="timeline-marker"></div>
+                    <div className="timeline-content">
+                      <h3 className="timeline-title">Final Round</h3>
+                      <p>Nullam vel sem. Nullam vel sem. Integer ante arcu,
+                        accumsan a, consectetuer eget, posuere ut,
+                        mauris. </p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
   );
 }

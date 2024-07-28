@@ -13,6 +13,7 @@ import {Hero} from "@/components/hero";
 import dragon from "../../public/hero_bg.png";
 import {CTA} from "@/components/cta";
 import {Timeline} from "@/components/timeline";
+import {About} from "@/components/about";
 
 
 export default function Home() {
@@ -24,6 +25,7 @@ export default function Home() {
                 className={"dragon"}
             />
             <CTA />
+            <About />
             <Timeline />
             <Prizes />
             <FAQ />

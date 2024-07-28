@@ -2,6 +2,7 @@
 import React from "react";
 import { WavyBackground } from "./ui/wavy-background";
 import Image from "next/image";
+import {CTA} from "@/components/cta";
 
 export function Hero() {
   return (
@@ -16,9 +17,9 @@ export function Hero() {
             className={"logo"}
         />
       </p>
-      <p className="heading text-base md:text-2xl lg:text-4xl mt-10 text-white font-normal inter-var text-center">
-        The premier competitive programming hackathon
-      </p>
+      {/*<p className="heading text-base md:text-xl lg:text-2xl mt-10 text-white font-normal inter-var text-center">*/}
+      {/*  The premier competitive programming hackathon*/}
+      {/*</p>*/}
     </div>
   );
 }
