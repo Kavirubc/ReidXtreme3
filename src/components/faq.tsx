@@ -45,15 +45,14 @@ const FAQ: React.FC = () => {
             <div className="absolute w-full px-6 pt-10 pb-8 mt-8 shadow-xl sm:mx-auto sm:max-w-2xl sm:rounded-lg sm:px-10">
                 <div className="mx-auto">
                     <div className="flex flex-col items-center">
-                        <h2 className="mt-5 text-center text-3xl font-bold tracking-tight md:text-5xl font-bruno tracking-wider">FAQ</h2>
+                        <h2 className="mt-5 text-center text-3xl font-bold md:text-5xl font-bruno tracking-wider">FAQ</h2>
                     </div>
                     <div className="mx-auto mt-8 grid max-w-xl divide-y divide-neutral- font-des">
                         {faqItems.map((faq, index) => (
                             <div className="py-3" key={index}>
                                 <div className="group">
-                                    {/* Question */}
                                     <summary
-                                        className="flex cursor-pointer list-none items-center justify-between font-medium text-white" // Adjusted styling
+                                        className="flex cursor-pointer list-none items-center justify-between font-medium text-white" 
                                         onClick={() => handleToggle(index)}
                                     >
                                         <span>{faq.question}</span>
@@ -73,7 +72,6 @@ const FAQ: React.FC = () => {
                                             </svg>
                                         </span>
                                     </summary>
-                                    {/* Answer */}
                                     <motion.div
                                         initial="collapsed"
                                         animate={openIndex === index ? "open" : "collapsed"}
@@ -81,7 +79,7 @@ const FAQ: React.FC = () => {
                                             open: { opacity: 1, height: 'auto', marginTop: '10px' },
                                             collapsed: { opacity: 0, height: 0, marginTop: '0px' }
                                         }}
-                                        transition={{ duration: 0.7, ease: "easeInOut" }} 
+                                        transition={{ duration: 0.2, ease: "easeInOut" }} 
                                         style={{ overflow: 'hidden' }}
                                         className="text-gray-600 bg-slate-950 p-2 rounded-md mt-2" 
                                     >
