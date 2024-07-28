@@ -70,3 +70,11 @@ nav {
   text-align: center;
   justify-content: center;
 }
+
+.cta {
+  button {
+    &:hover {
+      background-color: rgba(4, 68, 46, 0.37);
+    }
+  }
+}
