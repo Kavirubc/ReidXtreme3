@@ -1,6 +1,6 @@
 'use client'
 import React from 'react';
-import Prizes from '../components/prize2';
+import Prizes from '../components/prize3';
 import FAQ from '../components/faq2';
 import Footer from '../components/footer2';
 import Gallery from '../components/gallery';
