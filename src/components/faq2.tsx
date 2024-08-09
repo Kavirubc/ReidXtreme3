@@ -59,13 +59,13 @@ const FAQ: React.FC = () => {
                                 animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 10 }}
                                 transition={{ duration: 0.5, ease: 'easeInOut', delay: index * 0.5 }}
                                 className="py-3"
-                                style={{ width: '100%' }} 
+                                style={{ width: '100%' }}
                             >
                                 <div className="group" style={{ width: '100%' }}>
                                     <summary
                                         className="flex cursor-pointer list-none items-center justify-between font-des font-semibold tracking-wider bg-tertiary bg-opacity-95 p-3 md:p-6 rounded-lg text-white md:text-xl text-base"
                                         onClick={() => handleToggle(index)}
-                                       
+
                                     >
                                         <span>{faq.question}</span>
                                         <span className={`transition transform duration-700 ${openIndex === index ? 'rotate-180' : ''}`}>
