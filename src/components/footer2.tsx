@@ -18,7 +18,7 @@ const Footer = () => {
                     className="flex flex-row justify-center gap-x-4  md:gap-x-24 items-center"
                 >
                     <Image src="/acm.png" alt="ACM Logo" width={150} height={150} className="md:w-[250px] md:h-[200px]" />
-                    <Image src="/ieee_new_blue.png" alt="IEEE Logo" width={250} height={350} className="md:w-[325px] md:h-[100px]" />
+                    <Image src="/ieee_new_blue.png" alt="IEEE Logo" width={300} height={200} className="md:w-[330px] md:h-[100px]" />
                 </motion.div>
 
                 <motion.div
@@ -57,7 +57,7 @@ const Footer = () => {
                     initial={{ opacity: 0, y: 50 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.9 }}
-                    className="text-center text-gray-300 hover:text-secondary mt-4 md:mt-0" 
+                    className="text-center text-gray-300 hover:text-secondary mt-4 md:mt-0"
                 >
                     <p className='font-des'>© {new Date().getFullYear()} ReidXtreme - All Rights Reserved.</p>
                 </motion.div>

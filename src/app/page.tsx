@@ -5,7 +5,6 @@ import FAQ from '../components/faq2';
 import Footer from '../components/footer2';
 import Gallery from '../components/gallery';
 import Test from '@/components/test';
-
 import Image from "next/image"
 import './styles.scss'
 import Navbar from "@/components/navbar";
@@ -18,7 +17,7 @@ import {About} from "@/components/about";
 
 export default function Home() {
     return (
-        <main className={'dark'}>
+        <main className={"dark"}>
             <Navbar />
             <Hero />
             <div

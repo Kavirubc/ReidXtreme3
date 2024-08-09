@@ -18,11 +18,9 @@ const Prize = () => {
     };
 
     return (
-        <main
-            className='flex flex-col max-h-screen '
-        >
-            <div className="flex flex-col items-center tracking-widest font-des bg-transparent text-white flex-grow">
-                <h1 className="lg:text-5xl lg:mt-32 text-3xl font-bruno font-bold pb-4 lg:pb-14">PRIZE</h1>
+       
+            <div className="flex flex-col min-h-screen md:max-h-screen items-center tracking-widest font-des bg-transparent text-white flex-grow">
+                <h1 className="lg:text-5xl lg:mt-32 text-3xl font-bruno font-bold pb-8 lg:pb-14">PRIZE</h1>
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 lg:gap-20">
                     {[...Array(3)].map((_, i) => {
                         const { ref, inView } = useInView({
@@ -42,14 +40,14 @@ const Prize = () => {
                                 key={i}
                             >
                                 <img src="/prize.png" alt={`prize ${i + 1}`} className="w-40 h-40 lg:w-64 lg:h-64 object-cover mb-8" />
-                                <h2 className="text-xl font-bold tracking-wider mb-2">{i + 1 === 1 ? '1st Place' : i + 1 === 2 ? '2nd Place' : '3rd Place'}</h2>
-                                <h1 className="text-2xl font-bold tracking-wider mb-1">{i + 1 === 1 ? 'Rs. xxx xxxx' : i + 1 === 2 ? 'Rs. xxx xxxx' : 'Rs. xxx xxxx'}</h1>
+                                <h2 className="text-xl font-bold tracking-wider mb-2">{i + 1 === 1 ? '2nd Place' : i + 1 === 2 ? '1st Place' : '3rd Place'}</h2>
+                                <h1 className="text-2xl font-bold tracking-wider mb-1">{i + 1 === 1 ? 'TBA' : i + 1 === 2 ? 'TBA' : 'TBA'}</h1>
                             </motion.div>
                         );
                     })}
                 </div>
             </div>
-        </main>
+      
     );
 };
 
