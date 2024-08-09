@@ -28,7 +28,7 @@ const FAQ: React.FC = () => {
             answer: "We will be choosing the best 10 teams for the final round based on the proposals submitted in the initial phase. The final 10 will be asked to implement the application and the best among them will be chosen based on various criteria."
         },
         {
-            question: "Are there any restrictions on the programming languages?",
+            question: "Are there any restrictions on the programming languages?  ",
             answer: (
                 <>
                     No, you are free to use whatever framework or programming language as you wish.<br />
@@ -44,62 +44,66 @@ const FAQ: React.FC = () => {
     });
 
     return (
-        <div className="flex flex-col min-h-screen md:max-h-screen items-center content-center justify-center w-full px-8 mt-12 shadow-2xl sm:mx-auto sm:max-w-7xl sm:rounded-lg sm:px-16 z-50 mb-20">
+        <div className="flex flex-col min-h-screen md:max-h-screen items-center content-center justify-center w-full px-8 pb-12 mt-10 shadow-2xl sm:mx-auto sm:max-w-7xl sm:rounded-lg sm:px-16">
             <div className="flex flex-col items-center sticky top-0 z-10 md:static">
                 <h2 className="mt-5 mb-5 text-center text-4xl font-bold md:text-6xl font-bruno tracking-wider">FAQ</h2>
             </div>
-            <div className="mx-auto w-full">
-                <div className="mx-auto mt-12 grid z-50 max-w-3xl divide-y divide-neutral-50 font-des w-full">
-                    {faqItems.map((faq, index) => (
-                        <motion.div
-                            ref={ref}
-                            key={index}
-                            initial={{ opacity: 0, y: 10 }}
-                            animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 10 }}
-                            transition={{ duration: 0.5, ease: 'easeInOut', delay: index * 0.5 }}
-                            className="py-3 w-full"
-                        >
-                            <div className="group w-full">
-                                <summary
-                                    className="flex cursor-pointer list-none items-center justify-between font-des font-semibold tracking-wider bg-tertiary bg-opacity-95 p-3 md:p-6 rounded-lg text-white md:text-xl text-base w-full"
-                                    onClick={() => handleToggle(index)}
-                                >
-                                    <span>{faq.question}</span>
-                                    <span className={`transition transform duration-700 ${openIndex === index ? 'rotate-180' : ''}`}>
-                                        <svg
-                                            fill="none"
-                                            height="24"
-                                            shapeRendering="geometricPrecision"
-                                            stroke="currentColor"
-                                            strokeLinecap="round"
-                                            strokeLinejoin="round"
-                                            strokeWidth="1.5"
-                                            viewBox="0 0 24 24"
-                                            width="24"
-                                        >
-                                            <path d="M6 9l6 6 6-6"></path>
-                                        </svg>
-                                    </span>
-                                </summary>
-                                <AnimatePresence initial={false}>
-                                    {openIndex === index && (
-                                        <motion.div
-                                            initial={{ height: 0, opacity: 0 }}
-                                            animate={{ height: 'auto', opacity: 1 }}
-                                            exit={{ height: 0, opacity: 0 }}
-                                            transition={{ duration: 1.0, ease: [0.25, 0.1, 0.25, 1] }}
-                                            style={{ overflow: 'hidden' }}
-                                            className="text-white text-base md:text-lg rounded-md tracking-wide w-full"
-                                        >
-                                            <div className="faq-answer mt-4 mb-1 md:px-6 px-3 bg-primary w-full">
-                                                {faq.answer}
-                                            </div>
-                                        </motion.div>
-                                    )}
-                                </AnimatePresence>
-                            </div>
-                        </motion.div>
-                    ))}
+            <div className="mx-auto">
+                <div className="mx-auto mt-12 grid z-50 max-w-3xl divide-y divide-neutral-50 font-des">
+                    {faqItems.map((faq, index) => {
+                        return (
+                            <motion.div
+                                ref={ref}
+                                key={index}
+                                initial={{ opacity: 0, y: 10 }}
+                                animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 10 }}
+                                transition={{ duration: 0.5, ease: 'easeInOut', delay: index * 0.5 }}
+                                className="py-3"
+                                style={{ width: '100%' }} 
+                            >
+                                <div className="group" style={{ width: '100%' }}>
+                                    <summary
+                                        className="flex cursor-pointer list-none items-center justify-between font-des font-semibold tracking-wider bg-tertiary bg-opacity-95 p-3 md:p-6 rounded-lg text-white md:text-xl text-base"
+                                        onClick={() => handleToggle(index)}
+                                       
+                                    >
+                                        <span>{faq.question}</span>
+                                        <span className={`transition transform duration-700 ${openIndex === index ? 'rotate-180' : ''}`}>
+                                            <svg
+                                                fill="none"
+                                                height="24"
+                                                shapeRendering="geometricPrecision"
+                                                stroke="currentColor"
+                                                strokeLinecap="round"
+                                                strokeLinejoin="round"
+                                                strokeWidth="1.5"
+                                                viewBox="0 0 24 24"
+                                                width="24"
+                                            >
+                                                <path d="M6 9l6 6 6-6"></path>
+                                            </svg>
+                                        </span>
+                                    </summary>
+                                    <AnimatePresence initial={false}>
+                                        {openIndex === index && (
+                                            <motion.div
+                                                initial={{ height: 0, opacity: 0 }}
+                                                animate={{ height: 'auto', opacity: 1 }}
+                                                exit={{ height: 0, opacity: 0 }}
+                                                transition={{ duration: 1.0, ease: [0.25, 0.1, 0.25, 1] }}
+                                                style={{ overflow: 'hidden', width: '100%' }}
+                                                className="text-white text-base md:text-lg rounded-md tracking-wide w-full"
+                                            >
+                                                <div className="faq-answer mt-4 mb-1 md:px-6 px-3 bg-primary" style={{ minHeight: '120px', overflow: 'hidden', width: '100%' }}>
+                                                    {faq.answer}
+                                                </div>
+                                            </motion.div>
+                                        )}
+                                    </AnimatePresence>
+                                </div>
+                            </motion.div>
+                        );
+                    })}
                 </div>
             </div>
         </div>
