@@ -4,7 +4,7 @@ import { PinContainer } from "./ui/3d-pin";
 
 export function Timeline() {
   return (
-      <section>
+      <section className={"mt-40"} id={"timeline"}>
         <div className="flex flex-col items-center pt-5 font-bruno tracking-widest">
           <h2 className="mt-5 text-center text-3xl font-bold  md:text-5xl">Timeline</h2>
         </div>

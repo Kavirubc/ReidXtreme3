@@ -44,6 +44,16 @@ const FAQ: React.FC = () => {
     });
 
     return (
+        <main className="flex flex-col h-screen items-center content-center justify-center mt-40" id={"faq"}>
+            <div className="absolute w-full px-6 pt-10 pb-8 mt-8 shadow-xl sm:mx-auto sm:max-w-2xl sm:rounded-lg sm:px-10">
+                <div className="mx-auto">
+                    <div className="flex flex-col items-center">
+                        <h2 className="mt-5 text-center text-3xl font-bold md:text-5xl font-bruno tracking-wider">FAQ</h2>
+                    </div>
+                    <div className="mx-auto mt-8 grid max-w-xl divide-y divide-neutral-50 font-des">
+                        {faqItems.map((faq, index) => (
+                            <div className="py-3" key={index}>
+                                <div className="group">
         <div className="flex flex-col min-h-screen md:max-h-screen items-center content-center justify-center w-full px-8 pb-12 mt-10 shadow-2xl sm:mx-auto sm:max-w-7xl sm:rounded-lg sm:px-16">
             <div className="flex flex-col items-center sticky top-0 z-10 md:static">
                 <h2 className="mt-5 mb-5 text-center text-4xl font-bold md:text-6xl font-bruno tracking-wider">FAQ</h2>
