@@ -20,8 +20,8 @@ const Prize2: React.FC = () => {
                         className="object-contain responsive"
                     />
                     <div className="text-white text-center pt-16 tracking-wide">
-                        <h2 className="text-3xl font-bold pb-3">P 2</h2>
-                        <p className="text-2xl">Rs. xxxxxx</p>
+                        <h2 className="text-2xl font-bold pb-3">First Runner's Up</h2>
+                        <p className="text-2xl">TBA</p>
                     </div>
                 </BackgroundGradient>
                 <BackgroundGradient className="rounded-[22px] p-4 sm:p-10 bg-white dark:bg-zinc-900 w-full max-w-sm md:max-w-md min-w-[300px]">
@@ -34,8 +34,8 @@ const Prize2: React.FC = () => {
                         className="object-contain"
                     />
                     <div className="text-white text-center pt-16 tracking-wide">
-                        <h2 className="text-3xl font-bold pb-3">P 2</h2>
-                        <p className="text-2xl">Rs. xxxxxx</p>
+                        <h2 className="text-2xl font-bold pb-3">Winner</h2>
+                        <p className="text-2xl">TBA</p>
                     </div>
                 </BackgroundGradient>
                 <BackgroundGradient className="rounded-[22px] p-4 sm:p-10 bg-white dark:bg-zinc-900 w-full max-w-sm md:max-w-md min-w-[300px]">
@@ -48,8 +48,8 @@ const Prize2: React.FC = () => {
                         className="object-contain"
                     />
                     <div className="text-white text-center pt-16 tracking-wide">
-                        <h2 className="text-3xl font-bold pb-3">P 2</h2>
-                        <p className="text-2xl">Rs. xxxxxx</p>
+                        <h2 className="text-2xl font-bold pb-3">Second Runner's Up</h2>
+                        <p className="text-2xl">TBA</p>
                     </div>
                 </BackgroundGradient>
             </div>
