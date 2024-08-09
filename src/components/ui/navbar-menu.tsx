@@ -32,30 +32,6 @@ export const MenuItem = ({
       >
         {item}
       </motion.p>
-      {active !== null && (
-        <motion.div
-          initial={{ opacity: 0, scale: 0.85, y: 10 }}
-          animate={{ opacity: 1, scale: 1, y: 0 }}
-          transition={transition}
-        >
-          {active === item && (
-            <div className="absolute top-[calc(100%_+_1.2rem)] left-1/2 transform -translate-x-1/2 pt-4">
-              <motion.div
-                transition={transition}
-                layoutId="active" // layoutId ensures smooth animation
-                className="bg-tertiary backdrop-blur-sm rounded-2xl overflow-hidden border border-white shadow-xl"
-              >
-                <motion.div
-                  layout // layout ensures smooth animation
-                  className="w-max h-full p-4"
-                >
-                  {children}
-                </motion.div>
-              </motion.div>
-            </div>
-          )}
-        </motion.div>
-      )}
     </div>
   );
 };
@@ -70,7 +46,7 @@ export const Menu = ({
   return (
     <nav
       onMouseLeave={() => setActive(null)} // resets the state
-      className="relative rounded-full boder border-white bg-black text-white shadow-input flex justify-center space-x-4 px-8 py-6 "
+      className="relative rounded-full boder bg-black text-white shadow-input flex justify-center space-x-4 px-8 py-3 "
     >
       {children}
     </nav>

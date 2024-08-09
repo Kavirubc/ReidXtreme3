@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const Prize2: React.FC = () => {
     return (
-        <div className="flex flex-col items-center px-6 md:px-0">
+        <div className="flex flex-col items-center px-6 md:px-0 mt-40">
             <h2 className="pt-5 text-center text-3xl font-bold font-bruno pb-20 md:text-5xl">Prizes</h2>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-14 md:max-w-7xl">
