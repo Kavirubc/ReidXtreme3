@@ -4,6 +4,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+/* 
+*{
+  border: red 1px solid;
+ } */
 
 :root {
   --foreground-rgb: 0, 0, 0;

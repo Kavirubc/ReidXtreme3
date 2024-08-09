@@ -8,17 +8,17 @@ const Footer = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5 }}
-            className="bg-black pb-5"
+            className="bg-black p-5"
         >
             <div className="container mx-auto px-4">
                 <motion.div
                     initial={{ opacity: 0, y: 50 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5 }}
-                    className="flex flex-col md:flex-row justify-center gap-y-1 md:gap-x-24 items-center"
+                    className="flex flex-row justify-center gap-x-4  md:gap-x-24 items-center"
                 >
-                    <Image src="/acm.png" alt="ACM Logo" width={200} height={200} />
-                    <Image src="/ieee.png" alt="IEEE Logo" width={200} height={200} />
+                    <Image src="/acm.png" alt="ACM Logo" width={150} height={150} className="md:w-[250px] md:h-[200px]" />
+                    <Image src="/ieee_new_blue.png" alt="IEEE Logo" width={350} height={300} className="md:w-[330px] md:h-[100px]" />
                 </motion.div>
 
                 <motion.div
@@ -57,7 +57,7 @@ const Footer = () => {
                     initial={{ opacity: 0, y: 50 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.9 }}
-                    className="text-center text-gray-300 hover:text-secondary mt-4 md:mt-0" 
+                    className="text-center text-gray-300 hover:text-secondary mt-4 md:mt-0"
                 >
                     <p className='font-des'>© {new Date().getFullYear()} ReidXtreme - All Rights Reserved.</p>
                 </motion.div>
