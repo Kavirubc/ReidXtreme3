@@ -18,7 +18,7 @@ const Footer = () => {
                     className="flex flex-row justify-center gap-x-4  md:gap-x-24 items-center"
                 >
                     <Image src="/acm.png" alt="ACM Logo" width={150} height={150} className="md:w-[250px] md:h-[200px]" />
-                    <Image src="/ieee_new_blue.png" alt="IEEE Logo" width={300} height={200} className="md:w-[330px] md:h-[100px]" />
+                    <Image src="/ieee_new_blue.png" alt="IEEE Logo" width={350} height={300} className="md:w-[330px] md:h-[100px]" />
                 </motion.div>
 
                 <motion.div
