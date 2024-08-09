@@ -8,11 +8,11 @@ import Test from '@/components/test';
 import Image from "next/image"
 import './styles.scss'
 import Navbar from "@/components/navbar";
-import {Hero} from "@/components/hero";
+import { Hero } from "@/components/hero";
 import dragon from "../../public/hero_bg.png";
-import {CTA} from "@/components/cta";
-import {Timeline} from "@/components/timeline";
-import {About} from "@/components/about";
+import { CTA } from "@/components/cta";
+import { Timeline } from "@/components/timeline";
+import { About } from "@/components/about";
 
 
 export default function Home() {

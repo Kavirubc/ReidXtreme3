@@ -4,11 +4,11 @@ import { NextResponse } from "next/server";
 import mongoose from "mongoose";
 
 export async function POST(req: any) {
-    const { teamName, teamEmail, teamLeaderName, teamLeaderEmail, teamleaderscontactNumber, university, teamMember1, teamMember1email, teamMember1contactNumber, teamMember2, teamMember2email, teamMember2contactNumber, teamMember3, teamMember3email,teamMember3contactNumber } = await req.json();
+    const { teamName, teamEmail, teamLeaderName, teamLeaderEmail, teamleaderscontactNumber, university, teamMember1, teamMember1email, teamMember1contactNumber, teamMember2, teamMember2email, teamMember2contactNumber, teamMember3, teamMember3email, teamMember3contactNumber } = await req.json();
 
     try {
         await connectDB();
-        await Contact.create({ teamName, teamEmail, teamLeaderName, teamLeaderEmail, teamleaderscontactNumber, university, teamMember1, teamMember1email, teamMember1contactNumber, teamMember2, teamMember2email, teamMember2contactNumber, teamMember3,teamMember3email, teamMember3contactNumber});
+        await Contact.create({ teamName, teamEmail, teamLeaderName, teamLeaderEmail, teamleaderscontactNumber, university, teamMember1, teamMember1email, teamMember1contactNumber, teamMember2, teamMember2email, teamMember2contactNumber, teamMember3, teamMember3email, teamMember3contactNumber });
 
         return NextResponse.json({
             msg: ["Team Registration Successful."],
