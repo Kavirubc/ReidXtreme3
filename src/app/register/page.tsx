@@ -36,16 +36,15 @@ const RegistrationForm = () => {
         setProgress(progressValue);
 
         const simulateProgress = () => {
-            if (progressValue < 80) { // Stop at 80% until submission is done
-                progressValue += 20; // Increment progress by 20%
+            if (progressValue < 80) { 
+                progressValue += 20; 
                 setProgress(progressValue);
-                setTimeout(simulateProgress, 500); // Simulate network latency
+                setTimeout(simulateProgress, 500); 
             }
         };
         simulateProgress();
 
         try {
-            console.log('Team Name: ', teamName);
             console.log('Team Email: ', teamEmail);
             console.log('Leader Name: ', teamLeaderName);
             console.log('Team Leader Email: ', teamLeaderEmail);
@@ -61,7 +60,6 @@ const RegistrationForm = () => {
             console.log('Member 3 Email: ', teamMember3email);
             console.log('Member 3 Contact Number:', teamMember3contactNumber);
 
-
             const res = await fetch('/api/register', {
                 method: 'POST',
                 headers: {
@@ -71,7 +69,9 @@ const RegistrationForm = () => {
                     teamName, teamEmail, teamLeaderName, teamLeaderEmail, teamleaderscontactNumber, university, teamMember1, teamMember1email, teamMember1contactNumber, teamMember2, teamMember2email, teamMember2contactNumber, teamMember3, teamMember3email, teamMember3contactNumber
                 }),
             });
+
             setProgress(100);
+
             const { msg, success } = await res.json();
             setError(msg);
             setSuccess(success);
@@ -107,7 +107,7 @@ const RegistrationForm = () => {
 
     return (
         <>
-            <Navbar className='border border-white rounded-full' />
+            <Navbar className='border border-white rounded-full mt-7' />
             <motion.div
                 initial={{ opacity: 0, y: -50 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -417,7 +417,7 @@ const RegistrationForm = () => {
                                         initial={{ opacity: 0, scale: 0.8 }}
                                         animate={{ opacity: 1, scale: 1 }}
                                         transition={{ duration: 0.3 }}
-                                        className="bg-primary bg-opacity-95 p-14 rounded-xl shadow-lg shadow-tertiary flex flex-col items-center w-[400px] md:w-[600px]"
+                                        className="bg-primary bg-opacity-95 p-10 rounded-2xl shadow-2xl shadow-tertiary flex flex-col items-center w-[400px] md:w-[600px] border border-emerald-950"
                                     >
                                         {isSubmitting ? (
                                             <>
@@ -435,14 +435,14 @@ const RegistrationForm = () => {
                                                         }}
                                                     />
                                                 </div>
-                                                <p className='text-white text-3xl font-bold'>Registering...</p>
+                                                <p className='text-white text-3xl font-bold tracking-widest font-des'>Registering...</p>
                                             </>
                                         ) : (
                                             <>
                                                 {success ? (
                                                     <>
                                                         <div className="text-green-500 text-xl md:text-3xl mb-4">✔️</div>
-                                                        <p className='text-white text-xl md:text-3xl font-bold text-center'>Successfully Registered for <br />
+                                                        <p className='text-white tracking-widest text-xl md:text-3xl font-des font-bold text-center'>Successfully Registered for <br />
                                                             <span className='font-bruno text-secondary text-3xl md:text-4xl'>
                                                                 ReidXtreme 3
                                                             </span>
@@ -451,14 +451,14 @@ const RegistrationForm = () => {
                                                 ) : (
                                                     <>
                                                         <div className="text-red-500 text-2xl md:text-xl mb-4">❌</div>
-                                                        <p className='text-red-700 text-2xl md:text-xl font-bold text-center'>Error. Please Try Again</p>
+                                                        <p className='text-yg text-2xl md:text-3xl tracking-widest text-center'>{error}</p>
                                                     </>
                                                 )}
                                                 <button
                                                     onClick={handleClosePopup}
-                                                    className="mt-6 px-6 py-3 text-xl bg-blue-950 text-white rounded-lg hover:bg-cyan-900 focus:outline-double focus:ring-2 focus:ring-cyan-600 focus:ring-offset-2 focus:ring-offset-slate-50 font-des tracking-widest"
+                                                    className="mt-10 px-6 py-3 text-xl bg-teal-950 border text-white rounded-lg hover:bg-teal-900 focus:outline-double focus:ring-2 focus:ring-cyan-600 focus:ring-offset-2 focus:ring-offset-slate-50 font-des tracking-widest"
                                                 >
-                                                    DONE
+                                                    Close
                                                 </button>
                                             </>
                                         )}

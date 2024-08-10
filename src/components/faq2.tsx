@@ -61,7 +61,7 @@ const FAQ: React.FC = () => {
                         >
                             <div className="group w-full">
                                 <summary
-                                    className="flex cursor-pointer list-none items-center justify-between font-des font-semibold tracking-wider bg-tertiary bg-opacity-95 p-3 md:p-6 rounded-lg text-white md:text-xl text-base w-full"
+                                    className="flex cursor-pointer list-none items-center justify-between font-des font-semibold tracking-widest bg-tertiary bg-opacity-95 p-3 md:p-6 rounded-lg text-gray-100 md:text-lg text-base w-full"
                                     onClick={() => handleToggle(index)}
                                 >
                                     <span>{faq.question}</span>
