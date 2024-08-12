@@ -3,7 +3,7 @@
 import { motion } from 'framer-motion';
 import React from 'react';
 import Head from 'next/head';
-import Navbar from '@/components/navbar';
+import Navbar from '@/components/navbar2';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
 import Footer from '@/components/footer2';
@@ -11,7 +11,7 @@ import Footer from '@/components/footer2';
 const ContactUs = () => {
     return (
         <>
-            <Navbar className='border border-white rounded-full' />
+            <Navbar  />
             <main className='flex flex-col items-center justify-center text-white mt-40 mb-20 '>
                 <div className="flex flex-col items-center tracking-widest font-des md:max-w-7xl">
                     <h1 className="text-4xl font-bold mb-12 font-bruno">Contact Us</h1>

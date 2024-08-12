@@ -7,7 +7,7 @@ import Gallery from '../components/gallery';
 import Test from '@/components/test';
 import Image from "next/image"
 import './styles.scss'
-import Navbar from "@/components/navbar";
+import Navbar from "@/components/navbar2";
 import { Hero } from "@/components/hero";
 import dragon from "../../public/hero_bg.png";
 import { CTA } from "@/components/cta";
