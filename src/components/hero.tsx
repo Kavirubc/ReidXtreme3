@@ -12,8 +12,8 @@ export function Hero() {
         <Image
             src="/logo.png"
             alt="ReidExtreme Logo"
-            width={200}
-            height={200}
+            width={300}
+            height={300}
             className={"logo"}
         />
       </p>
