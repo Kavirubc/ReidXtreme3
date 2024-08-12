@@ -3,7 +3,7 @@ import { TypewriterEffectSmooth } from "./ui/typewriter-effect";
 import React from "react";
 export function About() {
   return (
-      <section className={"mt-40"} id={"about"}>
+      <section className={"pt-40"} id={"about"}>
           <div className="flex flex-col items-center pt-5 tracking-widest">
               <h2 className="mt-5 text-center text-3xl font-bold  font-bruno md:text-5xl">About</h2>
               <p className={"pt-10 text-center text-gray-700 dark:text-gray-300 text-xs sm:text-base"}>
