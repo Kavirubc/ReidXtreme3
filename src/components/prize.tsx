@@ -46,7 +46,7 @@ const Prize = ({
     };
 
     return (
-        <div ref={ref} className="flex flex-col h-screen items-center content-center justify-center mt-40">
+        <div ref={ref} className="flex flex-col h-screen items-center content-center justify-center pt-40">
             <motion.div
                 initial="initial"
                 animate={controls}
