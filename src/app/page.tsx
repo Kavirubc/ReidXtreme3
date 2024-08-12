@@ -13,6 +13,7 @@ import dragon from "../../public/hero_bg.png";
 import { CTA } from "@/components/cta";
 import { Timeline } from "@/components/timeline";
 import { About } from "@/components/about";
+import Contact from "@/components/contact";
 
 
 export default function Home() {
@@ -28,6 +29,7 @@ export default function Home() {
             <Timeline />
             <Prizes />
             <FAQ />
+            <Contact />
             <Footer />
         </main>
     );

@@ -10,7 +10,7 @@ const Footer = () => {
             transition={{ duration: 0.5 }}
             className="bg-black py-8"
         >
-            <div className="container mx-auto px-4">
+            <div className="container mx-auto px-4 pt-40">
                 <motion.div
                     initial={{ opacity: 0, y: 50 }}
                     animate={{ opacity: 1, y: 0 }}
