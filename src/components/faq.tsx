@@ -41,7 +41,7 @@ const FAQ: React.FC = () => {
     ];
 
     return (
-        <main className="flex flex-col h-screen items-center content-center justify-center">
+        <main className="flex flex-col h-screen items-center content-center justify-center pt-40">
             <div className="absolute w-full px-6 pt-10 pb-8 mt-8 shadow-xl sm:mx-auto sm:max-w-2xl sm:rounded-lg sm:px-10">
                 <div className="mx-auto">
                     <div className="flex flex-col items-center">
