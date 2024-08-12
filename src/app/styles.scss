@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Bruno+Ace&display=swap');
 
+:root {
+  --foreground-rgb: 255, 255, 255 !important;
+  --background-start-rgb: 0, 0, 0 !important;
+  --background-end-rgb: 0, 0, 0 !important;
+}
+
 html {
   scroll-behavior: smooth;
 }
