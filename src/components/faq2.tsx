@@ -16,25 +16,24 @@ const FAQ: React.FC = () => {
 
     const faqItems: FAQItem[] = [
         {
-            question: "What is the registration process?",
-            answer: "We will be posting the announcements on our social media and the registration links will be available on our site. You will be required to register for the workshop and competition separately."
+            question: "What is ReidXtreme 3.0?",
+            answer: "ReidXtreme 3.0 is the premier competitive programming hackathon organized by the IEEE Student Branch in collaboration with the ACM Student Chapter at the University of Colombo School of Computing. It's designed to enhance the competitive programming skills of undergraduate students and prepare them for the tech industry."
         },
         {
-            question: "What are the phases of the competition?",
-            answer: "The competition will have three phases; the proposal submission phase, the implementation phase, and the judging phase. The proposal submission stage will be open to all participants. The implementation stage will be for the top 10 teams selected from the proposal submissions."
+            question: "How is the event structured?",
+            answer: "ReidXtreme 3.0 consists of two rounds: an initial qualifying round and a final round. The top 10 teams from the initial round advance to the finals, which is a 12-hour in-person hackathon."
         },
         {
-            question: "How will the final app be chosen?",
-            answer: "We will be choosing the best 10 teams for the final round based on the proposals submitted in the initial phase. The final 10 will be asked to implement the application and the best among them will be chosen based on various criteria."
+            question: "Who can participate in ReidXtreme 3.0?",
+            answer: "The event is primarily aimed at undergraduate students looking to elevate their competitive programming skills and gain exposure to the tech industry."
         },
         {
-            question: "Are there any restrictions on the programming languages?",
-            answer: (
-                <>
-                    No, you are free to use whatever framework or programming language as you wish.<br />
-                    <span style={{ color: '#ffbc40' }}>Go crazy and may the best solution win!</span>
-                </>
-            )
+            question: "What are the benefits of participating in ReidXtreme 3.0?",
+            answer: "Participants can enhance their technical competencies, gain valuable industry exposure, network with peers and professionals in the tech field, and prepare for global competitions like the IEEE Xtreme hackathon."
+        },
+        {
+            question: "How is ReidXtreme 3.0 different from previous versions? ",
+            answer: "Unlike ReidXtreme 1.0 and 2.0 which were held online, ReidXtreme 3.0 will be hosted physically, providing an enhanced learning experience and better networking opportunities."
         },
     ];
 
