@@ -1,7 +1,7 @@
 'use client';
 import { motion } from 'framer-motion';
 import { useState } from 'react';
-import Navbar from '@/components/navbar';
+import Navbar from '@/components/navbar2';
 import Footer from '@/components/footer2';
 
 const RegistrationForm = () => {
@@ -107,7 +107,7 @@ const RegistrationForm = () => {
 
     return (
         <>
-            <Navbar className='border border-white rounded-full mt-7' />
+            <Navbar />
             <motion.div
                 initial={{ opacity: 0, y: -50 }}
                 animate={{ opacity: 1, y: 0 }}
