@@ -43,20 +43,20 @@ const FAQ: React.FC = () => {
     });
 
     return (
-        <div className="flex flex-col min-h-screen pt-40 items-center content-center justify-center w-full px-8  mt-10 shadow-2xl sm:mx-auto sm:max-w-7xl sm:rounded-lg sm:px-16" id={"faq"}>
-            <div className="flex flex-col items-center sticky top-0 z-10 md:static">
-                <h2 className="mt-5 mb-5 text-center text-4xl font-bold md:text-6xl font-bruno tracking-wider">FAQ</h2>
-            </div>
+        <div className="flex flex-col min-h-screen pt-5 items-center content-center justify-center w-full px-8 mt-10 shadow-2xl sm:mx-auto sm:max-w-7xl sm:rounded-lg sm:px-16" id={"faq"}>
+            
+                <h2 className="mt-32 mb-5 text-center text-3xl font-bold font-bruno md:text-5xl">FAQ</h2>
+           
             <div className="mx-auto w-full">
-                <div className="mx-auto mt-12 grid z-50 max-w-3xl divide-y divide-neutral-50 font-des w-full">
+                <div className="mx-auto mt-3 grid z-10 max-w-3xl divide-y divide-neutral-50 font-des w-full">
                     {faqItems.map((faq, index) => (
                         <motion.div
                             ref={ref}
                             key={index}
                             initial={{ opacity: 0, y: 10 }}
                             animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 10 }}
-                            transition={{ duration: 0.5, ease: 'easeInOut', delay: index * 0.5 }}
-                            className="py-3 w-full"
+                            transition={{ duration: 0.4, ease: 'easeInOut', delay: index * 0.4 }}
+                            className="py-2 w-full"
                         >
                             <div className="group w-full">
                                 <summary
@@ -86,7 +86,7 @@ const FAQ: React.FC = () => {
                                             initial={{ height: 0, opacity: 0 }}
                                             animate={{ height: 'auto', opacity: 1 }}
                                             exit={{ height: 0, opacity: 0 }}
-                                            transition={{ duration: 1.0, ease: [0.25, 0.1, 0.25, 1] }}
+                                            transition={{ duration: 0.5, ease: [0.25, 0.1, 0.25, 1] }}
                                             style={{ overflow: 'hidden' }}
                                             className="text-white text-base md:text-lg rounded-md tracking-wide w-full"
                                         >
