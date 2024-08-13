@@ -56,7 +56,7 @@ const FAQ: React.FC = () => {
                             initial={{ opacity: 0, y: 10 }}
                             animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 10 }}
                             transition={{ duration: 0.4, ease: 'easeInOut', delay: index * 0.4 }}
-                            className="py-3 w-full"
+                            className="py-2 w-full"
                         >
                             <div className="group w-full">
                                 <summary

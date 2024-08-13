@@ -19,7 +19,7 @@ export function Timeline() {
                     </div>
                     <div className="timeline-marker"></div>
                     <div className="timeline-content">
-                      <h3 className="timeline-title">Workshop 1</h3>
+                      <h3 className="timeline-title">Workshop 1 - Intro to Competitive Programming</h3>
                       <p>Join us for an interactive session where you'll meet the team that secured 4th place in IEEE Xtreme 17. Dive into a hands-on workshop featuring beginner-level competitive programming challenges</p>
                     </div>
                   </li>
@@ -41,7 +41,7 @@ export function Timeline() {
                     <div className="timeline-marker"></div>
                     <div className="timeline-content">
                       <h3 className="timeline-title">Registration Opens</h3>
-                      <p>Registrations will open on the 24th of August 2024.</p>
+                      <p>You have 72 hours to register your team for the initial round of the hackathon. A delegate handbook will be provided soon.</p>
                     </div>
                   </li>
                   <li className="timeline-item">
