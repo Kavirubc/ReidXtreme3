@@ -10,16 +10,19 @@ import Footer from '@/components/footer2';
 
 const ContactUs = () => {
     return (
-        <div className="pt-40 px-10 flex flex-col items-center tracking-widest font-des max-w-7xl ml-auto mr-auto" id={"contactus"}>
-            <h1 className="text-4xl font-bold mb-12 font-bruno">Contact Us</h1>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+        <div className="pt-5 px-10 flex flex-col text-center items-center tracking-widest font-des max-w-7xl ml-auto mr-auto" id={"contactus"}>
+
+            <h2 className="mt-32 mb-14 text-center text-3xl font-bold font-bruno md:text-5xl">Contact Us</h2>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-40">
                 <motion.div
-                    whileHover={{ scale: 1.05, boxShadow: "0px 0px 20px rgba(0, 0, 0, 0.8)" }}
-                    className="flex flex-col items-center bg-transparent text-white rounded-xl shadow-lg p-6 border border-yg transition-all duration-500"
+                    whileHover={{ scale: 1.0, boxShadow: "0px 0px 20px rgba(0, 0, 0, 0.8)" }}
+                    className="flex flex-col items-center bg-transparent text-white rounded-xl shadow-lg p-6 transition-all duration-500"
                 >
-                    <img src="/team1.jpg" alt="contact one" className="w-32 h-32 md:w-72 md:h-72 object-contain mb-4" />
-                    <h2 className="text-xl font-bold tracking-wider mb-2">Sasmitha Silva
+                    <img src="/team1.jpg" alt="contact one" className="w-52 h-52 md:w-72 md:h-72 object-cover mb-4 rounded-full" />
+                    <h2 className="text-2xl font-bold tracking-wider mb-2">Sasmitha Silva
                     </h2>
+                    <h4 className="text-xl mt-4 text-yg font-semibold tracking-widest mb-2">Marketing Lead</h4>
                     <div className="text-white flex items-center mb-2">
                         <FontAwesomeIcon icon={faEnvelope} className="text-yg mr-2" />
                         <a href="mailto:silvasasmitha53@gmail.com"
@@ -31,16 +34,19 @@ const ContactUs = () => {
                     </div>
                 </motion.div>
                 <motion.div
-                    whileHover={{ scale: 1.05, boxShadow: "0px 0px 20px rgba(0, 0, 0, 0.8)" }}
-                    className="flex flex-col items-center bg-transparent text-white rounded-xl shadow-lg p-6 border border-yg transition-all duration-500"
+                    whileHover={{ scale: 1.0, boxShadow: "0px 0px 20px rgba(0, 0, 0, 0.8)" }}
+                    className="flex flex-col items-center bg-transparent text-white rounded-xl shadow-lg p-6  transition-all duration-500"
                 >
-                    <img src="/team2.jpg" alt="contact one" className="w-32 h-32 md:w-72 md:h-72 object-contain mb-4" />
-                    <h2 className="text-xl font-bold tracking-wider mb-2">Nethmi Hapuarachchi
+                    <img src="/two2.jpg" alt="contact one" className="w-52 h-52 md:w-72 md:h-72 object-cover mb-4 rounded-full" />
+                    <h2 className="text-2xl font-bold tracking-wider mb-2">Nethmi Hapuarachchi
+
                     </h2>
-                    <div className="text-white flex items-center mb-2 text-wrap">
+                    <h4 className="text-xl mt-4 text-yg font-semibold tracking-wider mb-2">Marketing Team Member
+                    </h4>
+                    <div className="text-white flex items-center mb-2">
                         <FontAwesomeIcon icon={faEnvelope} className="text-yg mr-2" />
                         <a href="mailto:sathruwanihapuarachchi7@gmail.com"
-                            className="hover:underline">sathruwanihapuarachchi7 <br /> @gmail.com</a>
+                            className="hover:underline">sathruwanihapuarachchi7@gmail.com</a>
                     </div>
                     <div className="text-white flex items-center">
                         <FontAwesomeIcon icon={faPhone} className="text-yg mr-2" />
