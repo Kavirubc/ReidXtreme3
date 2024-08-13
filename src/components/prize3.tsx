@@ -10,7 +10,7 @@ const Prize = () => {
             opacity: 1,
             y: 0,
             transition: {
-                delay: i * 0.6,
+                delay: i * 0.4,
                 duration: 0.8,
                 ease: "easeIn"
             }
@@ -19,7 +19,7 @@ const Prize = () => {
 
     return (
 
-        <div className="flex flex-col min-h-screen pt-40 items-center tracking-widest font-des bg-transparent text-white flex-grow" id={"prizes"}>
+        <div className="flex flex-col min-h-screen pt-5 items-center tracking-widest font-des bg-transparent text-white flex-grow" id={"prizes"}>
             <h1 className="lg:text-5xl lg:mt-32 text-3xl font-bruno font-bold pb-8 lg:pb-14">PRIZE</h1>
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 lg:gap-20">
                 {[...Array(3)].map((_, i) => {
