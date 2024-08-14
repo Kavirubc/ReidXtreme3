@@ -17,16 +17,16 @@ const ContactUs = () => {
                     whileHover={{scale: 1.05, boxShadow: "0px 0px 20px rgba(0, 0, 0, 0.8)"}}
                     className="flex flex-col items-center bg-transparent text-white rounded-xl shadow-lg p-6 border border-yg transition-all duration-500"
                 >
-                    <img src="/team1.jpg" alt="contact one" className="w-32 h-32 md:w-72 md:h-72 object-contain mb-4"/>
+                    <img src="/team1.jpg" alt="contact one" className="w-32 h-32 md:w-72 md:h-72 mb-4 rounded-full object-fill overflow-hidden"/>
                     <h2 className="text-xl font-bold tracking-wider mb-2">Sasmitha Silva
                     </h2>
-                    <div className="text-white flex items-center mb-2">
-                        <FontAwesomeIcon icon={faEnvelope} className="text-yg mr-2"/>
+                    <div className="text-white flex items-center mb-2 text-center">
+                        {/*<FontAwesomeIcon icon={faEnvelope} className="text-yg mr-2"/>*/}
                         <a href="mailto:silvasasmitha53@gmail.com"
-                           className="hover:underline">esilvasasmitha53@gmail.com</a>
+                           className="hover:underline">esilvasasmitha53<br/>@gmail.com</a>
                     </div>
                     <div className="text-white flex items-center">
-                        <FontAwesomeIcon icon={faPhone} className="text-yg mr-2"/>
+                        {/*<FontAwesomeIcon icon={faPhone} className="text-yg mr-2"/>*/}
                         <a href="tel:+94715479744" className="hover:underline">+94 71 547 9744</a>
                     </div>
                 </motion.div>
@@ -34,16 +34,16 @@ const ContactUs = () => {
                     whileHover={{scale: 1.05, boxShadow: "0px 0px 20px rgba(0, 0, 0, 0.8)"}}
                     className="flex flex-col items-center bg-transparent text-white rounded-xl shadow-lg p-6 border border-yg transition-all duration-500"
                 >
-                    <img src="/team2.jpg" alt="contact one" className="w-32 h-32 md:w-72 md:h-72 object-contain mb-4"/>
+                    <img src="/team2.jpg" alt="contact one" className="w-32 h-32 md:w-72 md:h-72 mb-4 rounded-full object-fill overflow-hidden"/>
                     <h2 className="text-xl font-bold tracking-wider mb-2">Nethmi Hapuarachchi
                     </h2>
-                    <div className="text-white flex items-center mb-2 text-wrap">
-                        <FontAwesomeIcon icon={faEnvelope} className="text-yg mr-2"/>
+                    <div className="text-white flex items-center mb-2 text-wrap text-center">
+                        {/*<FontAwesomeIcon icon={faEnvelope} className="text-yg mr-2"/>*/}
                         <a href="mailto:sathruwanihapuarachchi7@gmail.com"
                            className="hover:underline">sathruwanihapuarachchi7 <br/> @gmail.com</a>
                     </div>
                     <div className="text-white flex items-center">
-                        <FontAwesomeIcon icon={faPhone} className="text-yg mr-2"/>
+                        {/*<FontAwesomeIcon icon={faPhone} className="text-yg mr-2"/>*/}
                         <a href="tel:+94778022449" className="hover:underline">+94 77 802 2449</a>
                     </div>
                 </motion.div>

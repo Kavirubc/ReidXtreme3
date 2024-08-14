@@ -24,11 +24,11 @@ const ContactUs = () => {
                             <h2 className="text-xl font-bold tracking-wider mb-2">Sasmitha Silva
                             </h2>
                             <div className="text-white flex items-center mb-2">
-                                <FontAwesomeIcon icon={faEnvelope} className="text-yg mr-2" />
+                                {/*<FontAwesomeIcon icon={faEnvelope} className="text-yg mr-2" />*/}
                                 <a href="mailto:silvasasmitha53@gmail.com" className="hover:underline">esilvasasmitha53@gmail.com</a>
                             </div>
                             <div className="text-white flex items-center">
-                                <FontAwesomeIcon icon={faPhone} className="text-yg mr-2" />
+                                {/*<FontAwesomeIcon icon={faPhone} className="text-yg mr-2" />*/}
                                 <a href="tel:+94715479744" className="hover:underline">+94 71 547 9744</a>
                             </div>
                         </motion.div>
@@ -40,11 +40,11 @@ const ContactUs = () => {
                             <h2 className="text-xl font-bold tracking-wider mb-2">Nethmi Hapuarachchi
                             </h2>
                             <div className="text-white flex items-center mb-2">
-                                <FontAwesomeIcon icon={faEnvelope} className="text-yg mr-2" />
-                                <a href="mailto:sathruwanihapuarachchi7@gmail.com" className="hover:underline">sathruwanihapuarachchi7@gmail.com</a>
+                                {/*<FontAwesomeIcon icon={faEnvelope} className="text-yg mr-2" />*/}
+                                <a href="mailto:sathruwanihapuarachchi7@gmail.com" className="hover:underline">sathruwanihapuarachchi7<br />@gmail.com</a>
                             </div>
                             <div className="text-white flex items-center">
-                                <FontAwesomeIcon icon={faPhone} className="text-yg mr-2" />
+                                {/*<FontAwesomeIcon icon={faPhone} className="text-yg mr-2" />*/}
                                 <a href="tel:+94778022449" className="hover:underline">+94 77 802 2449</a>
                             </div>
                         </motion.div>
