@@ -125,12 +125,12 @@ const Navbar: React.FC = () => {
 
                 <div className="flex flex-grow justify-center">
                     {[
-                        { label: "Home", link: "/" },
-                        { label: "About", link: "about" },
-                        { label: "Timeline", link: "timeline" },
-                        { label: "Prizes", link: "prizes" },
-                        { label: "FAQ", link: "faq" },
-                        { label: "Contact Us", link: "/contactus" },
+                        {label: "Home", link: "/#"},
+                        {label: "About", link: "/#about"},
+                        {label: "Timeline", link: "/#timeline"},
+                        {label: "Prizes", link: "/#prizes"},
+                        {label: "FAQ", link: "/#faq"},
+                        {label: "Contact Us", link: "/#contactus"},
                         { label: "Register Now", link: "/register" },
                     ].map((item, index) => (
                         <a

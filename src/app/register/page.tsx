@@ -114,7 +114,7 @@ const RegistrationForm = () => {
                 transition={{ duration: 0.5 }}
                 className="flex flex-col items-center justify-center p-4 bg-black text-white font-sans pt-36 min-h-screen"
             >
-                <h2 className="text-3xl font-bruno mb-8 pt-5">Register Your Team</h2>
+                <h2 className="text-3xl font-bruno text-center mb-8 pt-5">Register Your Team</h2>
                 <form onSubmit={handleSubmit} className="w-full max-w-5xl space-y-6 font-des tracking-widest">
                     <motion.fieldset
                         initial={{ opacity: 0, y: -50 }}
