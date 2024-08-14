@@ -14,6 +14,7 @@ import { CTA } from "@/components/cta";
 import { Timeline } from "@/components/timeline";
 import { About } from "@/components/about";
 import Contact from "@/components/contact";
+import {SponserCards} from "@/components/sponser";
 
 
 export default function Home() {
@@ -28,6 +29,7 @@ export default function Home() {
             <About />
             <Timeline />
             <Prizes />
+            <SponserCards />
             <FAQ />
             <Contact />
             <Footer />
