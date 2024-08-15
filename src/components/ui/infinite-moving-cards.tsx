@@ -108,7 +108,7 @@ export const InfiniteMovingCards = ({
                 <img
                     src={item.image}
                     alt={item.name}
-                    className="w-100 h-100 object-contain mx-auto"/>
+                    className="w-100 h-100 mx-auto"/>
             </li>
         ))}
       </ul>

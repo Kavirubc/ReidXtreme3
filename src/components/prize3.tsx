@@ -35,13 +35,13 @@ const Prize = () => {
                             initial="hidden"
                             animate={inView ? 'visible' : 'hidden'}
                             variants={boxVariants}
-                            whileHover={{ scale: 1.05, boxShadow: `0px 0px 40px ${i === 0 ? 'rgba(205, 127, 50, 1)' : i === 1 ? 'rgba(255, 215, 0, 1)' : 'rgba(192, 192, 192, 1)'}`, borderColor: "transparent" }}
+                            whileHover={{ scale: 1.05, boxShadow: `0px 0px 40px ${i === 0 ? 'rgba(255, 215, 0, 1)' : i === 1 ? 'rgba(192, 192, 192, 1)' : 'rgba(205, 127, 50, 1)'}`, borderColor: "transparent" }}
                             className="flex flex-col items-center text-white rounded-xl shadow-lg p-12 border border-yg transition-all duration-500"
                             key={i}
                         >
                             <img src="/prize.png" alt={`prize ${i + 1}`} className="w-40 h-40 lg:w-64 lg:h-64 object-cover mb-8" />
-                            <h2 className="text-xl font-bold tracking-wider mb-2">{i + 1 === 1 ? '2nd Place' : i + 1 === 2 ? '1st Place' : '3rd Place'}</h2>
-                            <h1 className="text-2xl font-bold tracking-wider mb-1">{i + 1 === 1 ? 'TBA' : i + 1 === 2 ? 'TBA' : 'TBA'}</h1>
+                            <h2 className="text-xl font-bold tracking-wider mb-2">{i + 1 === 1 ? '1st Place' : i + 1 === 2 ? '2nd Place' : '3rd Place'}</h2>
+                            <h1 className="text-3xl font-bold tracking-wider mb-1">{i + 1 === 1 ? 'Rs. 25 000' : i + 1 === 2 ? 'Rs. 15 000' : 'Rs. 10 000'}</h1>
                         </motion.div>
                     );
                 })}
