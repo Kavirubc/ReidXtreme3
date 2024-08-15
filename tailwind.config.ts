@@ -20,6 +20,9 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      spacing: {
+        '128': '28rem',
+      },
 
       boxShadow: {
         'custom-hover': '0 0 30px #008A5F',

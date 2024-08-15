@@ -8,7 +8,7 @@ export function Timeline() {
         <div className="flex flex-col items-center pt-5 font-bruno tracking-widest">
           <h2 className="mt-5 text-center text-3xl font-bold  md:text-5xl">Timeline</h2>
         </div>
-        <div className="w-full flex items-center justify-center pt-10">
+        <div className="w-full flex items-center justify-center pt-10 font-des tracking-wider">
           <div className="container-fluid">
             <div className="row example-centered">
               <div className="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2">
@@ -46,12 +46,32 @@ export function Timeline() {
                   </li>
                   <li className="timeline-item">
                     <div className="timeline-info">
+                      <span>August 21, 2024</span>
+                    </div>
+                    <div className="timeline-marker"></div>
+                    <div className="timeline-content">
+                      <h3 className="timeline-title">Workshop 3</h3>
+                      <p>TBA</p>
+                    </div>
+                  </li>
+                  <li className="timeline-item">
+                    <div className="timeline-info">
                       <span>August 24, 2024</span>
                     </div>
                     <div className="timeline-marker"></div>
                     <div className="timeline-content">
                       <h3 className="timeline-title">Initial Round</h3>
                       <p>Test your skills in an 8-hour online competitive programming hackathon hosted on HackerRank. Compete for a place in the top 10 to secure your spot in the final round of ReidXtreme 3.0. </p>
+                    </div>
+                  </li>
+                  <li className="timeline-item">
+                    <div className="timeline-info">
+                      <span>August 25, 2024</span>
+                    </div>
+                    <div className="timeline-marker"></div>
+                    <div className="timeline-content">
+                      <h3 className="timeline-title">Workshop 4 & Finalists Reveal</h3>
+                      <p>TBA</p>
                     </div>
                   </li>
                   <li className="timeline-item">
