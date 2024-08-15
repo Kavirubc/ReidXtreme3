@@ -29,7 +29,7 @@ const FAQ: React.FC = () => {
         },
         {
             question: "What are the benefits of participating in ReidXtreme 3.0?",
-            answer: "Participants can enhance their technical competencies, gain valuable industry exposure, network with peers and professionals in the tech field, and prepare for global competitions like the IEEE Xtreme hackathon."
+            answer: "Participants can enhance their technical competencies, gain valuable industry exposure, network with peers and professionals in the tech field, and prepare for global competitions like the IEEEXtreme hackathon."
         },
         {
             question: "How is ReidXtreme 3.0 different from previous versions? ",
