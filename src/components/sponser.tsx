@@ -31,7 +31,7 @@ const testimonials = [
   },
   {
     image: "/a1.png",
-    name: "Aventura",
+    name: "Acentura",
     title: "Silver Partner",
     color: "silver"
   },
