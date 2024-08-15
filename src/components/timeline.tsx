@@ -15,12 +15,12 @@ export function Timeline() {
                 <ul className="timeline timeline-centered">
                   <li className="timeline-item">
                     <div className="timeline-info">
-                      <span>August 17, 20124</span>
+                      <span>August 17, 2024</span>
                     </div>
                     <div className="timeline-marker"></div>
                     <div className="timeline-content">
-                      <h3 className="timeline-title">Workshop 1 - Intro to Competitive Programming</h3>
-                      <p>Join us for an interactive session where you'll meet the team that secured 4th place in IEEE Xtreme 17. Dive into a hands-on workshop featuring beginner-level competitive programming challenges</p>
+                      <h3 className="timeline-title">Workshop 1 - Introduction to Competitive Programming</h3>
+                      <p>Join us for an interactive session where you'll meet the team that secured 4th place in IEEEXtreme 17. Dive into a hands-on workshop featuring beginner-level competitive programming challenges</p>
                     </div>
                   </li>
                   <li className="timeline-item">
@@ -36,7 +36,7 @@ export function Timeline() {
                   </li>
                   <li className="timeline-item">
                     <div className="timeline-info">
-                      <span>August 24, 2024</span>
+                      <span>August 18, 2024</span>
                     </div>
                     <div className="timeline-marker"></div>
                     <div className="timeline-content">
@@ -46,7 +46,7 @@ export function Timeline() {
                   </li>
                   <li className="timeline-item">
                     <div className="timeline-info">
-                      <span>August 30, 2024</span>
+                      <span>August 24, 2024</span>
                     </div>
                     <div className="timeline-marker"></div>
                     <div className="timeline-content">
