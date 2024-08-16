@@ -25,7 +25,7 @@ const Footer = () => {
                     initial={{ opacity: 0, y: 50 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.7 }}
-                    className="flex justify-center gap-x-6 items-center mb-8 text-gray-700 space-x-4 md:space-x-0 md:flex-row"
+                    className="flex justify-center gap-x-5 items-center mb-8 text-gray-700 space-x-0 md:space-x-0 md:flex-row"
                 >
                     {/* ACM Social Media */}
                     <div className="flex space-x-4 border-r pr-4">
@@ -35,7 +35,7 @@ const Footer = () => {
                             rel="noopener noreferrer"
                             className="hover:text-blue-700"
                         >
-                            <FaFacebook className="text-cyan-600 hover:text-blue-700" size={25} />
+                            <FaFacebook className="text-cyan-500 hover:text-blue-700" size={25} />
                         </a>
                         <a
                             href="https://www.instagram.com/ucsc.acm"
@@ -43,7 +43,7 @@ const Footer = () => {
                             rel="noopener noreferrer"
                             className="hover:text-pink-600"
                         >
-                            <FaInstagram className="text-cyan-600 hover:text-pink-600" size={25} />
+                            <FaInstagram className="text-cyan-500 hover:text-pink-600" size={25} />
                         </a>
                         <a
                             href="https://www.linkedin.com/company/ucscacmstudentchapter"
@@ -51,7 +51,7 @@ const Footer = () => {
                             rel="noopener noreferrer"
                             className="hover:text-cyan-500"
                         >
-                            <FaLinkedin className="text-cyan-600 hover:text-cyan-500" size={25} />
+                            <FaLinkedin className="text-cyan-500 hover:text-cyan-500" size={25} />
                         </a>
                     </div>
 

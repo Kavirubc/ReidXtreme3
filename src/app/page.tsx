@@ -14,7 +14,7 @@ import { CTA } from "@/components/cta";
 import { Timeline } from "@/components/timeline";
 import { About } from "@/components/about";
 import Contact from "@/components/contact";
-import  SponserCards  from "@/components/sponsor2";
+import  SponserCards  from "@/components/sponsor3";
 
 
 
@@ -35,6 +35,7 @@ export default function Home() {
             <Contact />
             <Footer />
         </main>
+
         
     );
 }
