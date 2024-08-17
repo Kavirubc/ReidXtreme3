@@ -22,7 +22,7 @@ export function CTA() {
   ];
   return (
     <div className="cta flex flex-col items-center justify-center h-[20rem]  mt-40">
-      <p className="intro text-neutral-600 dark:text-neutral-200 text-xs sm:text-base  ">
+      <p className="intro text-neutral-600 dark:text-neutral-200 text-xs sm:text-base font-des">
         A premier competitive programming hackathon by the IEEE and ACM Student Chapters of UCSC
       </p>
       <TypewriterEffectSmooth words={words} />

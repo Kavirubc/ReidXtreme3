@@ -12,7 +12,7 @@ const ContactUs = () => {
     return (
         <div className="pt-5 px-10 flex flex-col text-center items-center tracking-widest font-des max-w-7xl ml-auto mr-auto" id={"contactus"}>
 
-            <h2 className="mt-32 mb-10 text-center text-3xl font-bold font-bruno md:text-5xl">Contact Us</h2>
+            <h2 className="mt-32 mb-10 text-center text-4xl font-bold font-bruno md:text-6xl">Contact Us</h2>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-40">
                 <motion.div

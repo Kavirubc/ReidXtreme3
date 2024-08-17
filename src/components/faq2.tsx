@@ -43,9 +43,9 @@ const FAQ: React.FC = () => {
     });
 
     return (
-        <div className="flex flex-col min-h-screen pt-5 items-center content-center justify-center w-full px-8 mt-10 shadow-2xl sm:mx-auto sm:max-w-7xl sm:rounded-lg sm:px-16" id={"faq"}>
+        <div className="flex flex-col min-h-screen items-center content-center justify-center w-full px-8 shadow-2xl sm:mx-auto sm:max-w-7xl sm:rounded-lg sm:px-16" id={"faq"}>
 
-                <h2 className="mt-32 mb-5 text-center text-3xl font-bold font-bruno md:text-5xl">FAQ</h2>
+            <h2 className="mt-1 mb-5 text-center text-5xl font-bold font-bruno md:text-6xl">FAQ</h2>
 
             <div className="mx-auto w-full">
                 <div className="mx-auto mt-3 grid z-10 max-w-3xl divide-y divide-neutral-50 font-des w-full">
