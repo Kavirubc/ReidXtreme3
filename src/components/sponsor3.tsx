@@ -4,7 +4,7 @@ import React from 'react';
 const SponsorCard: React.FC = () => {
     return (
         <main className="flex flex-col min-h-screen lg:h-auto items-center justify-center text-center mt-32 p-10 lg:p-1 font-des">
-            <h2 className="mb-14 lg:mt-32 text-center text-3xl font-bold font-bruno md:text-5xl">Our Partners</h2>
+            <h2 className="mb-14 lg:mt-32 text-center text-4xl font-bold font-bruno md:text-6xl">Our Partners</h2>
             <div className='grid grid-cols-1 lg:grid-cols-1 md:gap-14 gap-10 lg:mb-14 mb-10'>
                 <div className="w-80 h-80 border border-yg rounded-xl bg-transparent flex flex-col items-center justify-between p-4 transform transition duration-700 hover:scale-105">
                     <div className="w-full h-60 flex items-center justify-center bg-transparent">

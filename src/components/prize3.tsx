@@ -20,7 +20,7 @@ const Prize = () => {
     return (
 
         <div className="flex flex-col min-h-screen pt-5 items-center tracking-widest font-des bg-transparent text-white flex-grow" id={"prizes"}>
-            <h2 className="mt-32 mb-14 text-center text-3xl font-bold font-bruno md:text-5xl">Prizes</h2>
+            <h2 className="mt-32 mb-14 text-center text-5xl font-bold font-bruno md:text-6xl">Prizes</h2>
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 lg:gap-20">
                 {[...Array(3)].map((_, i) => {
                     const { ref, inView } = useInView({
@@ -41,7 +41,7 @@ const Prize = () => {
                         >
                             <img src="/prize.png" alt={`prize ${i + 1}`} className="w-40 h-40 lg:w-64 lg:h-64 object-cover mb-8" />
                             <h2 className="text-xl font-bold tracking-wider mb-2">{i + 1 === 1 ? '1st Place' : i + 1 === 2 ? '2nd Place' : '3rd Place'}</h2>
-                            <h1 className="text-3xl font-bold tracking-wider mb-1">{i + 1 === 1 ? 'Rs. 25 000' : i + 1 === 2 ? 'Rs. 15 000' : 'Rs. 10 000'}</h1>
+                            <h1 className="text-3xl font-bold tracking-wider">{i + 1 === 1 ? 'Rs. 25 000' : i + 1 === 2 ? 'Rs. 15 000' : 'Rs. 10 000'}</h1>
                         </motion.div>
                     );
                 })}

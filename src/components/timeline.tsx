@@ -6,7 +6,7 @@ export function Timeline() {
   return (
       <section className={"pt-40"} id={"timeline"}>
         <div className="flex flex-col items-center pt-5 font-bruno tracking-widest">
-          <h2 className="mt-5 text-center text-3xl font-bold  md:text-5xl">Timeline</h2>
+          <h2 className="mt-5 text-center text-5xl font-bold  md:text-6xl">Timeline</h2>
         </div>
         <div className="w-full flex items-center justify-center pt-10 font-des tracking-wider">
           <div className="container-fluid">
