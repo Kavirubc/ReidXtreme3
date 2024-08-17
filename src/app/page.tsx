@@ -12,7 +12,7 @@ import { Timeline } from "@/components/timeline";
 import { About } from "@/components/about";
 import Contact from "@/components/contact";
 import SponserCards from "@/components/sponsor3";
-import Register from "@/components/register";
+
 
 
 export default function Home() {
@@ -28,7 +28,6 @@ export default function Home() {
             <Timeline />
             <Prizes />
             <SponserCards />
-            {/* <Register /> */}
             <FAQ />
             <Contact />
             <Footer />
