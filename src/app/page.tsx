@@ -28,7 +28,7 @@ export default function Home() {
             <Timeline />
             <Prizes />
             <SponserCards />
-            <Register />
+            {/* <Register /> */}
             <FAQ />
             <Contact />
             <Footer />
