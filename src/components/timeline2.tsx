@@ -24,12 +24,12 @@ export function Timeline() {
                                     </div>
                                 </li>
                                 <li className="timeline-item">
-                                    <div className="timeline-info">
+                                    <div className="timeline-info line-through">
                                         <span>August 18, 2024</span>
                                     </div>
                                     <div className="timeline-marker"></div>
                                     <div className="timeline-content">
-                                        <h3 className="timeline-title">Workshop 2 - Advanced Problem Solving
+                                        <h3 className="timeline-title line-through">Workshop 2 - Advanced Problem Solving
                                         </h3>
                                         <p>Engage in a hands-on session focused on solving medium to hard-level competitive programming questions. Learn to master problem-solving strategies and thinking patterns, guided by expert Sandaras Dhanujaya.</p>
                                     </div>
@@ -41,7 +41,7 @@ export function Timeline() {
                                     <div className="timeline-marker"></div>
                                     <div className="timeline-content">
                                         <h3 className="timeline-title">Registration Opens</h3>
-                                        <p>You have 4 days to register your team for the initial round of the hackathon. Click here to download <a href='https://drive.google.com/uc?export=download&id=1UHGB1tjNsSGyHnsqokLK7BSFTT48QhX1' className="underline">Delegate Booklet</a>.</p>
+                                        <p>You have 5 days to register your team for the initial round of the hackathon. Click here to download <a href='https://drive.google.com/uc?export=download&id=1UHGB1tjNsSGyHnsqokLK7BSFTT48QhX1' className="underline">Delegate Booklet</a>.</p>
                                     </div>
                                 </li>
                                 <li className="timeline-item">

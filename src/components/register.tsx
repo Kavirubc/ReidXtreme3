@@ -7,7 +7,7 @@ const RegisterPage = () => {
                 Register
             </h1>
             <p className="text-center max-w-lg text-base sm:text-lg font-des tracking-wider mt-5 mb-10">
-                Join ReidXtreme 3.0, the premier hackathon for competitive programming. Challenge yourself in two dynamic rounds and elevate your skills. Go head-to-head with top competitors and make your mark. Don’t wait  <a href=''
+                Join ReidXtreme 3.0, the premier hackathon for competitive programming. Challenge yourself in two dynamic rounds and elevate your skills. Go head-to-head with top competitors and make your mark. Don’t wait  <a href='/register'
                 className="text-yg font-semibold">Register Now</a> for an unforgettable experience!
             </p>
 
