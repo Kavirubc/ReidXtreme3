@@ -116,7 +116,7 @@ const RegistrationForm = () => {
                 className="flex flex-col items-center justify-center p-4 bg-black text-white font-sans pt-36 min-h-screen max-w-screen"
             >
                 <h2 className="mt-1 mb-6 text-center text-4xl font-bold font-bruno md:text-5xl">Register Your Team</h2>
-                <p className='mb-6 text-left'>Click here to download the <a href="https://drive.google.com/uc?export=download&id=15jw6noC_S9wbSHztrjIitWrXykDDc2vu" className="underline hover:text-secondary">Delegate Booklet</a>.</p>
+                <p className='mb-6 text-left'>Click here to download the <a href="https://drive.google.com/uc?export=download&id=1UHGB1tjNsSGyHnsqokLK7BSFTT48QhX1" className="underline hover:text-secondary">Delegate Booklet</a>.</p>
                 <form onSubmit={handleSubmit} className="w-full max-w-5xl space-y-6 font-des tracking-widest">
                     <motion.fieldset
                         initial={{ opacity: 0, y: -50 }}

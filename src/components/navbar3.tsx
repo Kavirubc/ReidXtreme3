@@ -37,8 +37,8 @@ const Navbar: React.FC = () => {
         if (link.startsWith('/')) {
             window.location.href = link;
         } else if (link === 'delegate-book') {
-            const pdfUrl = ''; 
-            const linkElement = document.createElement('a');https://drive.google.com/uc?export=download&id=1UHGB1tjNsSGyHnsqokLK7BSFTT48QhX1
+            const pdfUrl = 'https://drive.google.com/uc?export=download&id=1UHGB1tjNsSGyHnsqokLK7BSFTT48QhX1'; 
+            const linkElement = document.createElement('a');
             linkElement.href = pdfUrl;
             linkElement.setAttribute('download', 'Delegate_Book.pdf');
             document.body.appendChild(linkElement);
@@ -54,7 +54,7 @@ const Navbar: React.FC = () => {
     };
 
     return (
-        <div className={`p-5 flex fixed top-0 left-0 right-0 z-50 font-des transition-transform duration-300 ${isVisible ? 'transform translate-y-0' : 'transform -translate-y-full'}`}>
+        <div className={`p-5 flex fixed top-0 left-0 right-0 z-50 transition-transform duration-300 ${isVisible ? 'transform translate-y-0' : 'transform -translate-y-full'}`}>
         
             <div className="md:hidden rounded-full  mt-4 flex items-center justify-between w-full bg-black border backdrop-blur-lg shadow-xl px-4 py-2">
    
