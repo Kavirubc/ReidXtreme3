@@ -4,7 +4,7 @@ import Prizes from '../components/prize3';
 import FAQ from '../components/faq2';
 import Footer from '../components/footer2';
 import './styles.scss';
-import Navbar from "@/components/navbar3";
+import Navbar from "@/components/navbar2";
 import { Hero } from "@/components/hero";
 import { CTA } from "@/components/cta";
 import { Timeline } from "@/components/timeline2";
@@ -13,6 +13,7 @@ import Contact from "@/components/contact";
 import SponserCards from "@/components/sponsor3";
 // import Register from '@/components/register';
 import Preloader from '@/components/preloading'; 
+import RegisterPage from '@/components/register';
 
 export default function Home() {
     const [loading, setLoading] = useState(true);
@@ -39,7 +40,7 @@ export default function Home() {
             <Timeline />
             <Prizes />
             <SponserCards />
-            {/* <Register /> */}
+            <RegisterPage />
             <FAQ />
             <Contact />
             <Footer />
