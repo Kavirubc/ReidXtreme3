@@ -1,5 +1,5 @@
 import connectDB from "../lib/connectDB";
-import Register from "../../register/register";
+import Register from "../../roundone/register";
 import { NextResponse } from "next/server";
 import mongoose from "mongoose";
 
@@ -17,9 +17,6 @@ export async function POST(req: any) {
         teamMember2,
         teamMember2email,
         teamMember2contactNumber,
-        teamMember3,
-        teamMember3email,
-        teamMember3contactNumber,
     } = await req.json();
 
     try {
@@ -52,9 +49,6 @@ export async function POST(req: any) {
             teamMember2,
             teamMember2email,
             teamMember2contactNumber,
-            teamMember3,
-            teamMember3email,
-            teamMember3contactNumber,
         });
 
         return NextResponse.json({

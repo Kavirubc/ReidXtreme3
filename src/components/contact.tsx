@@ -12,7 +12,7 @@ const ContactUs = () => {
     return (
         <div className="pt-5 px-10 flex flex-col text-center items-center tracking-widest font-des max-w-7xl ml-auto mr-auto" id={"contactus"}>
 
-            <h2 className="mt-32 mb-10 text-center text-4xl font-bold font-bruno md:text-6xl">Contact Us</h2>
+            <h2 className="mt-32 mb-16 text-center text-4xl font-bold font-bruno md:text-6xl">Contact Us</h2>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-40">
                 <motion.div
@@ -26,7 +26,7 @@ const ContactUs = () => {
                     <div className="text-white flex items-center mb-2">
                         <FontAwesomeIcon icon={faEnvelope} className="text-yg mr-2" />
                         <a href="mailto:silvasasmitha53@gmail.com"
-                            className="custom-underline">esilvasasmitha53@gmail.com</a>
+                            className="custom-underline">silvasasmitha53@gmail.com</a>
                     </div>
                     <div className="text-white flex items-center">
                         <FontAwesomeIcon icon={faPhone} className="text-yg mr-2" />

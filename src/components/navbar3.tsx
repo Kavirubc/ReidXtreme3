@@ -37,7 +37,7 @@ const Navbar: React.FC = () => {
         if (link.startsWith('/')) {
             window.location.href = link;
         } else if (link === 'delegate-book') {
-            const pdfUrl = 'https://drive.google.com/uc?export=download&id=15jw6noC_S9wbSHztrjIitWrXykDDc2vu'; 
+            const pdfUrl = 'https://drive.google.com/uc?export=download&id=1UHGB1tjNsSGyHnsqokLK7BSFTT48QhX1'; 
             const linkElement = document.createElement('a');
             linkElement.href = pdfUrl;
             linkElement.setAttribute('download', 'Delegate_Book.pdf');

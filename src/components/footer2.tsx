@@ -57,16 +57,16 @@ const Footer = () => {
 
                     {/* ReidXtreme Social Media */}
                     <div className="flex space-x-4 border-r pr-4">
-                        
+
                         <a
                             href="https://www.linkedin.com/company/reidxtreme/"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="hover:text-pink-600"
                         >
-                           <FaLinkedin className="text-secondary hover:text-cyan-500" size={25} />
+                            <FaLinkedin className="text-secondary hover:text-cyan-500" size={25} />
                         </a>
-                        
+
                     </div>
 
                     {/* IEEE Social Media */}

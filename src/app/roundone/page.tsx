@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { useState } from 'react';
 import Navbar from '@/components/navbar2';
 import Footer from '@/components/footer2';
+import Head from 'next/head';
 
 const RegistrationForm = () => {
     const [progress, setProgress] = useState(0);
@@ -18,9 +19,6 @@ const RegistrationForm = () => {
     const [teamMember2, setTeamMember2] = useState('');
     const [teamMember2email, setTeamMember2email] = useState('');
     const [teamMember2contactNumber, setTeamMember2contactNumber] = useState('');
-    const [teamMember3, setTeamMember3] = useState('');
-    const [teamMember3email, setTeamMember3email] = useState('');
-    const [teamMember3contactNumber, setTeamMember3contactNumber] = useState('');
     const [error, setError] = useState('');
     const [success, setSuccess] = useState<boolean | null>(null);
     const [isSubmitting, setIsSubmitting] = useState<boolean>(false);
@@ -36,10 +34,10 @@ const RegistrationForm = () => {
         setProgress(progressValue);
 
         const simulateProgress = () => {
-            if (progressValue < 80) { 
-                progressValue += 20; 
+            if (progressValue < 80) {
+                progressValue += 20;
                 setProgress(progressValue);
-                setTimeout(simulateProgress, 500); 
+                setTimeout(simulateProgress, 500);
             }
         };
         simulateProgress();
@@ -56,9 +54,7 @@ const RegistrationForm = () => {
             console.log('Member 2 Name: ', teamMember2);
             console.log('Member 2 Email: ', teamMember2email);
             console.log('Member 2 Contact Number:', teamMember2contactNumber);
-            console.log('Member 3 Name: ', teamMember3);
-            console.log('Member 3 Email: ', teamMember3email);
-            console.log('Member 3 Contact Number:', teamMember3contactNumber);
+
 
             const res = await fetch('/api/register', {
                 method: 'POST',
@@ -66,7 +62,7 @@ const RegistrationForm = () => {
                     'Content-Type': 'application/json',
                 },
                 body: JSON.stringify({
-                    teamName, teamEmail, teamLeaderName, teamLeaderEmail, teamleaderscontactNumber, university, teamMember1, teamMember1email, teamMember1contactNumber, teamMember2, teamMember2email, teamMember2contactNumber, teamMember3, teamMember3email, teamMember3contactNumber
+                    teamName, teamEmail, teamLeaderName, teamLeaderEmail, teamleaderscontactNumber, university, teamMember1, teamMember1email, teamMember1contactNumber, teamMember2, teamMember2email, teamMember2contactNumber
                 }),
             });
 
@@ -89,9 +85,7 @@ const RegistrationForm = () => {
                 setTeamMember2("");
                 setTeamMember2email("");
                 setTeamMember2contactNumber("");
-                setTeamMember3("");
-                setTeamMember3email("");
-                setTeamMember3contactNumber("");
+
             }
         } catch (err) {
             setError('An unexpected error occurred.');
@@ -107,14 +101,22 @@ const RegistrationForm = () => {
 
     return (
         <>
+            <Head>
+                <title>ReidXtreme 3.0 - Register</title>
+                <meta name="description" content="Register your team for ReidXtreme 3.0, a competitive programming hackathon organized by UCSC." />
+                <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                <link rel="icon" href="/favicon2.png" />
+                
+            </Head>
             <Navbar />
             <motion.div
                 initial={{ opacity: 0, y: -50 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5 }}
-                className="flex flex-col items-center justify-center p-4 bg-black text-white font-sans pt-36 min-h-screen"
+                className="flex flex-col items-center justify-center p-4 bg-black text-white font-sans pt-36 min-h-screen max-w-screen"
             >
-                <h2 className="text-3xl font-bruno text-center mb-8 pt-5">Register Your Team</h2>
+                <h2 className="mt-1 mb-6 text-center text-4xl font-bold font-bruno md:text-5xl">Register Your Team</h2>
+                <p className='mb-6 text-left'>Click here to download the <a href="https://drive.google.com/uc?export=download&id=1UHGB1tjNsSGyHnsqokLK7BSFTT48QhX1" className="underline hover:text-secondary">Delegate Booklet</a>.</p>
                 <form onSubmit={handleSubmit} className="w-full max-w-5xl space-y-6 font-des tracking-widest">
                     <motion.fieldset
                         initial={{ opacity: 0, y: -50 }}
@@ -238,7 +240,7 @@ const RegistrationForm = () => {
                         </label>
                     </motion.fieldset>
 
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                    <div className="w-full max-w-5xl space-y-6 font-des tracking-widest">
                         <motion.fieldset
                             initial={{ opacity: 0, y: -50 }}
                             animate={{ opacity: 1, y: 0 }}
@@ -252,7 +254,7 @@ const RegistrationForm = () => {
                                     value={teamLeaderName}
                                     type="text" placeholder='' id="teamLeaderName"
                                     className="w-full p-3 mt-1 border border-gray-700 rounded bg-transparent focus:outline-double focus:ring-2 focus:ring-secondary "
-                                    required
+
                                 />
                             </label>
                             <label className="block mb-2">
@@ -262,7 +264,7 @@ const RegistrationForm = () => {
                                     value={teamLeaderEmail}
                                     type="text" placeholder='' id="teamLeaderEmail"
                                     className="w-full p-3 mt-1 border border-gray-700 rounded bg-transparent focus:outline-double focus:ring-2 focus:ring-secondary "
-                                    required
+
                                 />
                             </label>
                             <label className="block mb-2">
@@ -273,127 +275,92 @@ const RegistrationForm = () => {
                                     value={teamleaderscontactNumber}
                                     placeholder='' id="teamleaderscontactNumber"
                                     className="w-full p-3 mt-1 border border-gray-700 rounded bg-transparent focus:outline-double focus:ring-2 focus:ring-secondary "
-                                    required
-                                />
-                            </label>
-                        </motion.fieldset>
 
-                        <motion.fieldset
-                            initial={{ opacity: 0, y: -50 }}
-                            animate={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 0.5, delay: 1.5 }}
-                            className="border border-gray-700 p-4 rounded-md">
-                            <legend className="text-xl font-semibold mb-2 text-yg">Team Member 01</legend>
-                            <label className="block mb-2">
-                                Name
-                                <input
-                                    onChange={(e) => setTeamMember1(e.target.value)}
-                                    value={teamMember1}
-                                    type="text" placeholder='' id="teamMember1"
-                                    className="w-full p-3 mt-1 border border-gray-700 rounded bg-transparent focus:outline-double focus:ring-2 focus:ring-secondary "
-                                    required
-                                />
-                            </label>
-                            <label className="block mb-2">
-                                Email
-                                <input
-                                    onChange={(e) => setTeamMember1email(e.target.value)}
-                                    value={teamMember1email}
-                                    type="text" placeholder='' id="teamMember1email"
-                                    className="w-full p-3 mt-1 border border-gray-700 rounded bg-transparent focus:outline-double focus:ring-2 focus:ring-secondary "
-                                    required
-                                />
-                            </label>
-                            <label className="block mb-2">
-                                Contact Number
-                                <input
-                                    type="tel"
-                                    onChange={(e) => setTeamMember1contactNumber(e.target.value)}
-                                    value={teamMember1contactNumber}
-                                    placeholder='' id="teamMember1contactNumber"
-                                    className="w-full p-3 mt-1 border border-gray-700 rounded bg-transparent focus:outline-double focus:ring-2 focus:ring-secondary "
-                                    required
                                 />
                             </label>
                         </motion.fieldset>
+                        <div className='grid grid-cols-1 lg:grid-cols-2 gap-6'>
+                            <motion.fieldset
+                                initial={{ opacity: 0, y: -50 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                transition={{ duration: 0.5, delay: 1.5 }}
+                                className="border border-gray-700 p-4 rounded-md">
+                                <legend className="text-xl font-semibold mb-2 text-yg">Team Member 01</legend>
+                                <label className="block mb-2">
+                                    Name
+                                    <input
+                                        onChange={(e) => setTeamMember1(e.target.value)}
+                                        value={teamMember1}
+                                        type="text" placeholder='' id="teamMember1"
+                                        className="w-full p-3 mt-1 border border-gray-700 rounded bg-transparent focus:outline-double focus:ring-2 focus:ring-secondary "
 
-                        <motion.fieldset
-                            initial={{ opacity: 0, y: -50 }}
-                            animate={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 0.5, delay: 2.0 }}
-                            className="border border-gray-700 p-4 rounded-md">
-                            <legend className="text-xl font-semibold mb-2  text-yg">Team Member 02</legend>
-                            <label className="block mb-2">
-                                Name
-                                <input
-                                    onChange={(e) => setTeamMember2(e.target.value)}
-                                    value={teamMember2}
-                                    type="text" placeholder='' id="teamMember2"
-                                    className="w-full p-3 mt-1 border border-gray-700 rounded bg-transparent focus:outline-double focus:ring-2 focus:ring-secondary "
-                                    required
-                                />
-                            </label>
-                            <label className="block mb-2">
-                                Email
-                                <input
-                                    onChange={(e) => setTeamMember2email(e.target.value)}
-                                    value={teamMember2email}
-                                    type="text" placeholder='' id="teamMember2email"
-                                    className="w-full p-3 mt-1 border border-gray-700 rounded bg-transparent focus:outline-double focus:ring-2 focus:ring-secondary "
-                                    required
-                                />
-                            </label>
-                            <label className="block mb-2">
-                                Contact Number
-                                <input
-                                    type="tel"
-                                    onChange={(e) => setTeamMember2contactNumber(e.target.value)}
-                                    value={teamMember2contactNumber}
-                                    placeholder='' id="teamMember2contactNumber"
-                                    className="w-full p-3 mt-1 border border-gray-700 rounded bg-transparent focus:outline-double focus:ring-2 focus:ring-secondary "
-                                    required
-                                />
-                            </label>
-                        </motion.fieldset>
+                                    />
+                                </label>
+                                <label className="block mb-2">
+                                    Email
+                                    <input
+                                        onChange={(e) => setTeamMember1email(e.target.value)}
+                                        value={teamMember1email}
+                                        type="text" placeholder='' id="teamMember1email"
+                                        className="w-full p-3 mt-1 border border-gray-700 rounded bg-transparent focus:outline-double focus:ring-2 focus:ring-secondary "
 
-                        <motion.fieldset
-                            initial={{ opacity: 0, y: -50 }}
-                            animate={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 0.5, delay: 2.5 }}
-                            className="border border-gray-700 p-4 rounded-md">
-                            <legend className="text-xl font-semibold mb-2 text-yg">Team Member 03</legend>
-                            <label className="block mb-2">
-                                Name
-                                <input
-                                    onChange={(e) => setTeamMember3(e.target.value)}
-                                    value={teamMember3}
-                                    type="text" placeholder='' id="teamMember3"
-                                    className="w-full p-3 mt-1 border border-gray-700 rounded bg-transparent focus:outline-double focus:ring-2 focus:ring-secondary "
-                                    required
-                                />
-                            </label>
-                            <label className="block mb-2">
-                                Email
-                                <input
-                                    onChange={(e) => setTeamMember3email(e.target.value)}
-                                    value={teamMember3email}
-                                    type="text" placeholder='' id="teamMember3email"
-                                    className="w-full p-3 mt-1 border border-gray-700 rounded bg-transparent focus:outline-double focus:ring-2 focus:ring-secondary "
-                                    required
-                                />
-                            </label>
-                            <label className="block mb-2">
-                                Contact Number
-                                <input
-                                    type="tel"
-                                    onChange={(e) => setTeamMember3contactNumber(e.target.value)}
-                                    value={teamMember3contactNumber}
-                                    placeholder='' id="teamMember3contactNumber"
-                                    className="w-full p-3 mt-1 border border-gray-700 rounded bg-transparent focus:outline-double focus:ring-2 focus:ring-secondary "
-                                    required
-                                />
-                            </label>
-                        </motion.fieldset>
+                                    />
+                                </label>
+                                <label className="block mb-2">
+                                    Contact Number
+                                    <input
+                                        type="tel"
+                                        onChange={(e) => setTeamMember1contactNumber(e.target.value)}
+                                        value={teamMember1contactNumber}
+                                        placeholder='' id="teamMember1contactNumber"
+                                        className="w-full p-3 mt-1 border border-gray-700 rounded bg-transparent focus:outline-double focus:ring-2 focus:ring-secondary "
+
+                                    />
+                                </label>
+                            </motion.fieldset>
+
+                            <motion.fieldset
+                                initial={{ opacity: 0, y: -50 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                transition={{ duration: 0.5, delay: 2.0 }}
+                                className="border border-gray-700 p-4 rounded-md">
+                                <legend className="text-xl font-semibold mb-2  text-yg">Team Member 02</legend>
+                                <label className="block mb-2">
+                                    Name
+                                    <input
+                                        onChange={(e) => setTeamMember2(e.target.value)}
+                                        value={teamMember2}
+                                        type="text" placeholder='' id="teamMember2"
+                                        className="w-full p-3 mt-1 border border-gray-700 rounded bg-transparent focus:outline-double focus:ring-2 focus:ring-secondary "
+
+                                    />
+                                </label>
+                                <label className="block mb-2">
+                                    Email
+                                    <input
+                                        onChange={(e) => setTeamMember2email(e.target.value)}
+                                        value={teamMember2email}
+                                        type="text" placeholder='' id="teamMember2email"
+                                        className="w-full p-3 mt-1 border border-gray-700 rounded bg-transparent focus:outline-double focus:ring-2 focus:ring-secondary "
+
+                                    />
+                                </label>
+                                <label className="block mb-2">
+                                    Contact Number
+                                    <input
+                                        type="tel"
+                                        onChange={(e) => setTeamMember2contactNumber(e.target.value)}
+                                        value={teamMember2contactNumber}
+                                        placeholder='' id="teamMember2contactNumber"
+                                        className="w-full p-3 mt-1 border border-gray-700 rounded bg-transparent focus:outline-double focus:ring-2 focus:ring-secondary "
+
+                                    />
+                                </label>
+                            </motion.fieldset>
+                        </div>
+
+
+
                     </div>
 
                     <div className="flex justify-end">

@@ -20,7 +20,7 @@ const Prize = () => {
     return (
 
         <div className="flex flex-col min-h-screen pt-5 items-center tracking-widest font-des bg-transparent text-white flex-grow" id={"prizes"}>
-            <h2 className="mt-32 mb-14 text-center text-5xl font-bold font-bruno md:text-6xl">Prizes</h2>
+            <h2 className="mt-32 text-center text-5xl font-bold font-bruno md:text-6xl mb-16">Prizes</h2>
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 lg:gap-20">
                 {[...Array(3)].map((_, i) => {
                     const { ref, inView } = useInView({
