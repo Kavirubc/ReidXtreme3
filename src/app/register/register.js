@@ -40,7 +40,11 @@ const registerSchema = new Schema({
         required: [true, "University is required. "],
     },
 
+    teamMember1: {
+        type: String,
+        required: [false],
 
+    },
     teamMember1email: {
         type: String,
         required: [false],
@@ -53,7 +57,11 @@ const registerSchema = new Schema({
         match: [/^[\d]{10}$/i, "Invalid Team Member Contact Number. "],
     },
 
+    teamMember2: {
+        type: String,
+        required: [false],
 
+    },
     teamMember2email: {
         type: String,
         required: [false],
