@@ -4,6 +4,8 @@ import { useState } from 'react';
 import Navbar from '@/components/navbar2';
 import Footer from '@/components/footer2';
 import Head from 'next/head';
+import { sendMail } from '../api/register/smtp';
+import { send } from 'process';
 
 const RegistrationForm = () => {
     const [progress, setProgress] = useState(0);
@@ -73,6 +75,7 @@ const RegistrationForm = () => {
             setSuccess(success);
 
             if (success) {
+                sendMail(teamLeaderEmail,teamLeaderName);
                 setTeamName("");
                 setTeamEmail("");
                 setTeamLeaderName("");

@@ -1,5 +1,5 @@
 import connectDB from "../lib/connectDB";
-import Register from "../../roundone/register";
+import Register from "../../register/register";
 import { NextResponse } from "next/server";
 import mongoose from "mongoose";
 
