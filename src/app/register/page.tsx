@@ -2,7 +2,7 @@
 import { motion } from 'framer-motion';
 import { useState } from 'react';
 import Navbar from '@/components/navbar2';
-import Footer from '@/components/footer2';
+import Footer from '@/components/footer';
 import Head from 'next/head';
 import { sendMail } from '../api/register/smtp';
 import { send } from 'process';
@@ -125,7 +125,7 @@ const RegistrationForm = () => {
                         initial={{ opacity: 0, y: -50 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.5, delay: 0.5 }}
-                        className="border border-2 border-tertiary p-4 rounded-md">
+                        className="p-4 rounded-md">
                         <legend className="text-xl font-semibold mb-2 text-yg">Team Details</legend>
                         <label className="block mb-2">
                             Team Name
@@ -248,7 +248,7 @@ const RegistrationForm = () => {
                             initial={{ opacity: 0, y: -50 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.5, delay: 1.0 }}
-                            className="border border-gray-700 p-4 rounded-md">
+                            className="p-4 rounded-md">
                             <legend className="text-xl font-semibold mb-2 text-yg">Team Leader Details</legend>
                             <label className="block mb-2">
                                 Name
@@ -287,7 +287,7 @@ const RegistrationForm = () => {
                                 initial={{ opacity: 0, y: -50 }}
                                 animate={{ opacity: 1, y: 0 }}
                                 transition={{ duration: 0.5, delay: 1.5 }}
-                                className="border border-gray-700 p-4 rounded-md">
+                                className="p-4 rounded-md">
                                 <legend className="text-xl font-semibold mb-2 text-yg">Team Member 01</legend>
                                 <label className="block mb-2">
                                     Name
@@ -326,7 +326,7 @@ const RegistrationForm = () => {
                                 initial={{ opacity: 0, y: -50 }}
                                 animate={{ opacity: 1, y: 0 }}
                                 transition={{ duration: 0.5, delay: 2.0 }}
-                                className="border border-gray-700 p-4 rounded-md">
+                                className="p-4 rounded-md">
                                 <legend className="text-xl font-semibold mb-2  text-yg">Team Member 02</legend>
                                 <label className="block mb-2">
                                     Name

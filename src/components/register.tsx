@@ -2,13 +2,13 @@ import CountdownTimer from '../components/timer';
 
 const RegisterPage = () => {
     return (
-        <div className="min-h-screen bg-gradient-to-b from-black via-tertiary to-black text-white flex flex-col items-center justify-center p-4 sm:p-6 md:p-8">
-            <h1 className="lg:mt-5 mt-1 text-center text-4xl font-bold font-bruno md:text-6xl mb-8">
+        <div className="min-h-screen bg-gradient-to-b from-black via-tertiary to-black text-white flex flex-col items-center mt-40 lg:mt-20 justify-center p-4 sm:p-1 md:p-1">
+            <h1 className="mt-1 text-center text-4xl font-bold font-bruno md:text-6xl mb-8">
                 Register
             </h1>
             <p className="text-center max-w-lg text-base sm:text-lg font-des tracking-wider mt-5 mb-10">
                 Join ReidXtreme 3.0, the premier hackathon for competitive programming. Challenge yourself in two dynamic rounds and elevate your skills. Go head-to-head with top competitors and make your mark. Don’t wait  <a href='/register'
-                className="text-yg font-semibold">Register Now</a> for an unforgettable experience!
+                    className="text-yg font-semibold">Register Now</a> for an unforgettable experience!
             </p>
 
             <div className="flex flex-col items-center bg-transparent p-4 sm:p-6 md:p-8 rounded-xl shadow-lg">

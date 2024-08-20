@@ -50,8 +50,10 @@ export function Timeline() {
                                     </div>
                                     <div className="timeline-marker"></div>
                                     <div className="timeline-content">
-                                        <h3 className="timeline-title">Workshop 3</h3>
-                                        <p>TBA</p>
+                                        <h3 className="timeline-title">Workshop 3 - Team Dynamics & Soft Skills</h3>
+                                        <p>
+                                        Meet the dynamic duo, Abdullah Jasmin and Sandul Renuja, Co-Founders of ZaVolt (PVT) LTD, as they lead an insightful session on Team Dynamics and Soft Skills.
+                                        </p>
                                     </div>
                                 </li>
                                 <li className="timeline-item">
