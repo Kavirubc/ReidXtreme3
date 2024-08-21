@@ -1,6 +1,6 @@
 'use client';
 import React, { useState, useEffect } from 'react';
-import Prizes from '../components/prize3';
+import Prizes from '../components/prize4';
 import FAQ from '../components/faq2';
 import Footer from '../components/footer2';
 import './styles.scss';
@@ -11,7 +11,6 @@ import { Timeline } from "@/components/timeline2";
 import { About } from "@/components/about";
 import Contact from "@/components/contact";
 import SponserCards from "@/components/sponsor3";
-// import Register from '@/components/register';
 import Preloader from '@/components/preloading'; 
 import RegisterPage from '@/components/register';
 
