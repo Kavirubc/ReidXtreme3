@@ -24,33 +24,33 @@ export function Timeline() {
                                     </div>
                                 </li>
                                 <li className="timeline-item">
-                                    <div className="timeline-info line-through">
+                                    <div className="timeline-info line-through decoration-slice decoration-slate-300">
                                         <span>August 18, 2024</span>
                                     </div>
                                     <div className="timeline-marker"></div>
                                     <div className="timeline-content">
-                                        <h3 className="timeline-title line-through">Workshop 2 - Advanced Problem Solving
+                                        <h3 className="timeline-title line-through decoration-slice decoration-slate-300">Workshop 2 - Advanced Problem Solving
                                         </h3>
                                         <p>Engage in a hands-on session focused on solving medium to hard-level competitive programming questions. Learn to master problem-solving strategies and thinking patterns, guided by expert Sandaras Dhanujaya.</p>
                                     </div>
                                 </li>
                                 <li className="timeline-item">
-                                    <div className="timeline-info">
+                                    <div className="timeline-info line-through decoration-slice decoration-slate-300">
                                         <span>August 18, 2024</span>
                                     </div>
                                     <div className="timeline-marker"></div>
                                     <div className="timeline-content">
-                                        <h3 className="timeline-title">Registration Opens</h3>
+                                        <h3 className="timeline-title line-through decoration-slice decoration-slate-300">Registration Opens</h3>
                                         <p>You have 5 days to register your team for the initial round of the hackathon. Click here to download <a href='https://drive.google.com/uc?export=download&id=1UHGB1tjNsSGyHnsqokLK7BSFTT48QhX1' className="underline">Delegate Booklet</a>.</p>
                                     </div>
                                 </li>
                                 <li className="timeline-item">
-                                    <div className="timeline-info">
+                                    <div className="timeline-info line-through decoration-slice decoration-slate-300">
                                         <span>August 21, 2024</span>
                                     </div>
                                     <div className="timeline-marker"></div>
                                     <div className="timeline-content">
-                                        <h3 className="timeline-title">Workshop 3 - Team Dynamics & Soft Skills</h3>
+                                        <h3 className="timeline-title line-through decoration-slice decoration-slate-300">Workshop 3 - Team Dynamics & Soft Skills</h3>
                                         <p>
                                         Meet the dynamic duo, Abdullah Jasmin and Sandul Renuja, Co-Founders of ZaVolt (PVT) LTD, as they lead an insightful session on Team Dynamics and Soft Skills.
                                         </p>
