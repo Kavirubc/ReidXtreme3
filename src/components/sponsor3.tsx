@@ -3,10 +3,10 @@ import React from 'react';
 
 const SponsorCard: React.FC = () => {
     return (
-        <main className="flex flex-col min-h-screen lg:h-auto items-center justify-center text-center mt-64 lg:mt-24 p-6 lg-p-0 font-des">
+        <main className="flex flex-col w-screen h-auto items-center justify-center text-center mt-64 lg:mt-24 p-6 lg-p-0 font-des">
             <h2 className="mb-16 text-center text-4xl font-bold font-bruno md:text-6xl">Our Partners</h2>
 
-            <div className='grid grid-cols-1 lg:grid-cols-1 gap-10 lg:mb-14 mb-10'>
+            <div className='grid grid-cols-1 md:grid-cols-1 gap-10 md:mb-14 mb-10'>
             <a href="https://mooseclothingcompany.com/" target="_blank" rel="noopener noreferrer">
                 <div className="w-80 h-80 border border-yg rounded-xl bg-transparent flex flex-col items-center justify-between p-4 transform transition duration-700 hover:scale-105">
                     <div className="w-full h-60 flex items-center justify-center bg-transparent">
@@ -14,14 +14,14 @@ const SponsorCard: React.FC = () => {
                     </div>
                     <hr className="w-full border-t border-yg" />
                     <div className="mt-5 text-des text-2xl font-bold tracking-wider text-yellow-500">
-                        Gold Partner
+                        Gold Sponsor
                     </div>
                 </div>
                 </a>
             </div>
 
 
-            <div className='grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-x-16 lg:gap-y-14'>
+            <div className='grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-x-16 md:gap-y-14'>
                 <a href="https://www.acentura.com/" target="_blank" rel="noopener noreferrer">
                     <div className="w-full max-w-xs mx-auto border border-gray-400 rounded-xl bg-transparent flex flex-col items-center justify-between p-6 transform transition duration-500 hover:scale-105">
                         <div className="w-full h-40 flex items-center justify-center bg-transparent">
@@ -38,6 +38,17 @@ const SponsorCard: React.FC = () => {
                     <div className="w-full max-w-xs mx-auto border border-amber-600 rounded-xl bg-transparent flex flex-col items-center justify-between p-6 transform transition duration-500 hover:scale-105">
                         <div className="w-full h-40 flex items-center justify-center bg-transparent">
                             <Image src="/w3.png" alt="WSO2 Logo" width={250} height={100} className="object-contain" />
+                        </div>
+                        <hr className="w-full border-t border-amber-600" />
+                        <div className="mt-4 text-des text-2xl tracking-wider font-bold text-amber-600">
+                            Bronze Sponsor
+                        </div>
+                    </div>
+                </a>
+                <a href="https://www.xeynergy.com/" target="_blank" rel="noopener noreferrer">
+                    <div className="w-full max-w-xs mx-auto border border-amber-600 rounded-xl bg-transparent flex flex-col items-center justify-between p-6 transform transition duration-500 hover:scale-105">
+                        <div className="w-full h-40 flex items-center justify-center bg-transparent">
+                            <Image src="/b2.png" alt="Xeynergy" width={300} height={150} className="object-contain" />
                         </div>
                         <hr className="w-full border-t border-amber-600" />
                         <div className="mt-4 text-des text-2xl tracking-wider font-bold text-amber-600">
@@ -70,10 +81,22 @@ const SponsorCard: React.FC = () => {
                     </div>
                 </a>
 
+                <a href="https://www.coca-cola.com/lk/en" target="_blank" rel="noopener noreferrer">
+                    <div className="w-full max-w-xs mx-auto border border-white rounded-xl bg-transparent flex flex-col items-center justify-between p-6 transform transition duration-500 hover:scale-105">
+                        <div className="w-full h-40 flex items-center justify-center bg-transparent">
+                            <Image src="/c3.png" alt="Coca Cola Logo" width={350} height={150} className="object-contain" />
+                        </div>
+                        <hr className="w-full border-t border-white" />
+                        <div className="mt-4 text-des text-2xl tracking-wider text-white">
+                            Beverage Partner
+                        </div>
+                    </div>
+                </a>
+
                 <a href="https://linktr.ee/webcodoo" target="_blank" rel="noopener noreferrer">
                     <div className="w-full max-w-xs mx-auto border border-white rounded-xl bg-transparent flex flex-col items-center justify-between p-6 transform transition duration-500 hover:scale-105">
                         <div className="w-full h-40 flex items-center justify-center bg-transparent">
-                            <Image src="/g3.png" alt="Gift Logo" width={200} height={50} className="object-contain" />
+                            <Image src="/g3.png" alt="Gift Logo" width={300} height={150} className="object-contain" />
                         </div>
                         <hr className="w-full border-t border-white" />
                         <div className="mt-4 text-des text-2xl tracking-wider text-white">
