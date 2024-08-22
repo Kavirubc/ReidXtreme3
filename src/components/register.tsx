@@ -2,8 +2,8 @@ import CountdownTimer from '../components/timer';
 
 const RegisterPage = () => {
     return (
-        <div className="min-h-screen bg-gradient-to-b from-black via-tertiary to-black text-white flex flex-col items-center mt-40 lg:mt-20 justify-center p-4 sm:p-1 md:p-1">
-            <h1 className="mt-1 text-center text-4xl font-bold font-bruno md:text-6xl mb-8">
+        <div className="min-h-screen bg-gradient-to-b from-black via-tertiary to-black text-white flex flex-col items-center mt-1 lg:mt-20 justify-center p-4 sm:p-1 md:p-1">
+            <h1 className="text-center text-4xl font-bold font-bruno md:text-6xl mb-8">
                 Register
             </h1>
             <p className="text-center max-w-lg text-base sm:text-lg font-des tracking-wider mt-5 mb-10">
