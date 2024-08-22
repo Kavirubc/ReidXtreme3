@@ -63,7 +63,7 @@ export function Timeline() {
                                     <div className="timeline-marker"></div>
                                     <div className="timeline-content">
                                         <h3 className="timeline-title">Initial Round</h3>
-                                        <p>Test your skills in an 8-hour online competitive programming hackathon hosted on HackerRank. Compete for a place in the top 10 to secure your spot in the final round of ReidXtreme 3.0. </p>
+                                        <p>Test your skills in an 6-hour online competitive programming hackathon hosted on HackerRank. Compete for a place in the top 10 to secure your spot in the final round of ReidXtreme 3.0. </p>
                                     </div>
                                 </li>
                                 <li className="timeline-item">
@@ -78,7 +78,7 @@ export function Timeline() {
                                 </li>
                                 <li className="timeline-item">
                                     <div className="timeline-info">
-                                        <span>August 31, 2024</span>
+                                        <span>September 7, 2024</span>
                                     </div>
                                     <div className="timeline-marker"></div>
                                     <div className="timeline-content">
