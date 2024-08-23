@@ -41,7 +41,7 @@ export function Timeline() {
                                     <div className="timeline-marker"></div>
                                     <div className="timeline-content">
                                         <h3 className="timeline-title line-through decoration-slice decoration-slate-300">Registration Opens</h3>
-                                        <p>You have 5 days to register your team for the initial round of the hackathon. Click here to download <a href='https://drive.google.com/uc?export=download&id=1UHGB1tjNsSGyHnsqokLK7BSFTT48QhX1' className="underline">Delegate Booklet</a>.</p>
+                                        <p>You have 5 days to register your team for the initial round of the hackathon.</p>
                                     </div>
                                 </li>
                                 <li className="timeline-item">

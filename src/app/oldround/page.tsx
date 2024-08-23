@@ -1,11 +1,10 @@
 'use client';
 import { motion } from 'framer-motion';
 import { useState } from 'react';
-import Navbar from '@/components/navbar2';
+import Navbar from '@/components/navbar3';
 import Footer from '@/components/footer';
 import Head from 'next/head';
 import { sendMail } from '../api/register/smtp';
-import { send } from 'process';
 
 const RegistrationForm = () => {
     const [progress, setProgress] = useState(0);
@@ -75,7 +74,7 @@ const RegistrationForm = () => {
             setSuccess(success);
 
             if (success) {
-                sendMail(teamLeaderEmail,teamLeaderName);
+                sendMail(teamLeaderEmail, teamLeaderName);
                 setTeamName("");
                 setTeamEmail("");
                 setTeamLeaderName("");
@@ -109,7 +108,7 @@ const RegistrationForm = () => {
                 <meta name="description" content="Register your team for ReidXtreme 3.0, a competitive programming hackathon organized by UCSC." />
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
                 <link rel="icon" href="/favicon2.png" />
-                
+
             </Head>
             <Navbar />
             <motion.div

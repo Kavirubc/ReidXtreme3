@@ -32,12 +32,12 @@ export function CTA() {
           className="w-40 h-10 rounded-xl bg-green-900 border dark:border-white border-transparent text-white text-sm flex items-center justify-center">
           Register now
         </a> */}
-       <a
-                        href="https://drive.google.com/uc?export=download&id=1UHGB1tjNsSGyHnsqokLK7BSFTT48QhX1"
-                        className="w-40 h-10 rounded-xl bg-green-900 border dark:border-white border-transparent text-white text-sm flex items-center justify-center cursor-pointer"
-                    >
-                        Delegate Booklet
-                    </a>
+        {/* <a
+          href="https://drive.google.com/uc?export=download&id=1UHGB1tjNsSGyHnsqokLK7BSFTT48QhX1"
+          className="w-40 h-10 rounded-xl bg-green-900 border dark:border-white border-transparent text-white text-sm flex items-center justify-center cursor-pointer"
+        >
+          Delegate Booklet
+        </a> */}
 
       </div>
     </div>
