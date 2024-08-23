@@ -1,5 +1,5 @@
 import connectDB from "../lib/connectDB";
-import Register from "../../register/register";
+import Register from "../../oldround/register";
 import { NextResponse } from "next/server";
 import mongoose from "mongoose";
 
@@ -28,7 +28,7 @@ export async function POST(req: any) {
                 success: false,
             });
         }
-        const existingTeamEmail = await Register.findOne({ teamEmail} );
+        const existingTeamEmail = await Register.findOne({ teamEmail });
         if (existingTeamEmail) {
             return NextResponse.json({
                 msg: ["Team email already exists."],

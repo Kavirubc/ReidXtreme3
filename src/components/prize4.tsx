@@ -42,7 +42,7 @@ const Prize = () => {
                         >
                             <img src={images[i]} alt={`prize ${i + 1}`} className="w-44 h-44 lg:w-64 lg:h-72 object-cover" />
                             <h2 className="text-xl font-bold tracking-wider mb-2">{i + 1 === 1 ? '1st Place' : i + 1 === 2 ? '2nd Place' : '3rd Place'}</h2>
-                            <h1 className="text-3xl font-bold tracking-wider">{i + 1 === 1 ? 'Rs. 25 000' : i + 1 === 2 ? 'Rs. 15 000' : 'Rs. 10 000'}</h1>
+                            <h1 className="text-3xl font-bold tracking-wider">{i + 1 === 1 ? 'Rs. 30 000' : i + 1 === 2 ? 'Rs. 20 000' : 'Rs. 15 000'}</h1>
                         </motion.div>
                     );
                 })}
