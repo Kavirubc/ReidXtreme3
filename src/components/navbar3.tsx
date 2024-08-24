@@ -4,7 +4,7 @@ import React, { useEffect, useState } from 'react';
 
 const Navbar: React.FC = () => {
     const [activeLink, setActiveLink] = useState<string>('');
-    const [isVisible, setIsVisible] = useState(true); 
+    const [isVisible, setIsVisible] = useState(true);
     const [lastScrollY, setLastScrollY] = useState(0);
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
@@ -22,11 +22,11 @@ const Navbar: React.FC = () => {
             });
 
             if (window.scrollY > lastScrollY && window.scrollY > 100) {
-                setIsVisible(false); 
+                setIsVisible(false);
             } else {
                 setIsVisible(true);
             }
-            setLastScrollY(window.scrollY); 
+            setLastScrollY(window.scrollY);
         };
 
         window.addEventListener('scroll', handleScroll);
@@ -37,7 +37,8 @@ const Navbar: React.FC = () => {
         if (link.startsWith('/')) {
             window.location.href = link;
         } else if (link === 'delegate-book') {
-            const pdfUrl = 'https://drive.google.com/uc?export=download&id=1UHGB1tjNsSGyHnsqokLK7BSFTT48QhX1'; 
+            const pdfUrl = 'https://drive.google.com/uc?export=download&id=1bR6leL9AbXQ-viQ9-zMXBA-VvX30HZtn';
+
             const linkElement = document.createElement('a');
             linkElement.href = pdfUrl;
             linkElement.setAttribute('download', 'Delegate_Book.pdf');
@@ -50,21 +51,21 @@ const Navbar: React.FC = () => {
                 element.scrollIntoView({ behavior: 'smooth', block: 'start' });
             }
         }
-        setIsDropdownOpen(false); 
+        setIsDropdownOpen(false);
     };
 
     return (
         <div className={`p-5 flex fixed top-0 left-0 right-0 z-50 transition-transform duration-300 ${isVisible ? 'transform translate-y-0' : 'transform -translate-y-full'}`}>
-        
+
             <div className="md:hidden rounded-full  mt-4 flex items-center justify-between w-full bg-black border backdrop-blur-lg shadow-xl px-4 py-2">
-   
+
                 <div className="flex-shrink-0">
-                    <img src="/logo.png" alt="Logo" className="h-8" onClick={() => handleClick("/#")}/>
+                    <img src="/logo.png" alt="Logo" className="h-8" onClick={() => handleClick("/#")} />
                 </div>
-                
-         
-                <button 
-                    onClick={() => setIsDropdownOpen(!isDropdownOpen)} 
+
+
+                <button
+                    onClick={() => setIsDropdownOpen(!isDropdownOpen)}
                     className="text-white focus:outline-none"
                 >
                     {isDropdownOpen ? (
@@ -82,7 +83,7 @@ const Navbar: React.FC = () => {
             <div
                 className={`fixed top-0 right-0 h-screen w-screen pt-14 backdrop-blur-lg shadow-xl transition-transform duration-300 ${isDropdownOpen ? 'translate-x-0' : 'translate-x-full'} md:hidden w-64`}>
                 <div className="flex flex-shrink-0 px-4 flex-row justify-between">
-                    <img src="/logo.png" alt="Logo" className="h-10" onClick={() => handleClick("/#")}/>
+                    <img src="/logo.png" alt="Logo" className="h-10" onClick={() => handleClick("/#")} />
 
                     <button
                         onClick={() => setIsDropdownOpen(!isDropdownOpen)}
@@ -90,27 +91,27 @@ const Navbar: React.FC = () => {
                     >
                         {isDropdownOpen ? (
                             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                                 xmlns="http://www.w3.org/2000/svg">
+                                xmlns="http://www.w3.org/2000/svg">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
-                                      d="M6 18L18 6M6 6l12 12"></path>
+                                    d="M6 18L18 6M6 6l12 12"></path>
                             </svg>
                         ) : (
                             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                                 xmlns="http://www.w3.org/2000/svg">
+                                xmlns="http://www.w3.org/2000/svg">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
-                                      d="M4 6h16M4 12h16M4 18h16"></path>
+                                    d="M4 6h16M4 12h16M4 18h16"></path>
                             </svg>
                         )}
                     </button>
                 </div>
                 <div className="flex flex-col pt-16">
                     {[
-                        {label: "Home", link: "/#"},
-                        {label: "About", link: "/#about"},
-                        {label: "Timeline", link: "/#timeline"},
-                        {label: "Prizes", link: "/#prizes"},
-                        {label: "FAQ", link: "/#faq"},
-                        {label: "Contact Us", link: "/#contactus"},
+                        { label: "Home", link: "/#" },
+                        { label: "About", link: "/#about" },
+                        { label: "Timeline", link: "/#timeline" },
+                        { label: "Prizes", link: "/#prizes" },
+                        { label: "FAQ", link: "/#faq" },
+                        { label: "Contact Us", link: "/#contactus" },
                     ].map((item, index) => (
                         <a
                             key={index}
@@ -121,10 +122,10 @@ const Navbar: React.FC = () => {
                         </a>
                     ))}
                     <a
-                        className="reg-button mx-4 my-10 w-40 h-10 rounded-xl bg-green-900 border dark:border-white border-transparent text-white text-sm flex items-center justify-center"
+                        className="reg-button mx-4 my-10 w-52 h-14 rounded-xl bg-green-900 border dark:border-white border-transparent text-white text-sm flex items-center justify-center"
                         onClick={() => handleClick('delegate-book')}
                     >
-                        Delegate Book
+                        Initial Round Delegate Book
                     </a>
                 </div>
             </div>
@@ -135,13 +136,13 @@ const Navbar: React.FC = () => {
 
                 <div className="flex flex-grow justify-center">
                     {[
-                        {label: "Home", link: "/#"},
-                        {label: "About", link: "/#about"},
-                        {label: "Timeline", link: "/#timeline"},
-                        {label: "Prizes", link: "/#prizes"},
-                        {label: "FAQ", link: "/#faq"},
-                        {label: "Contact Us", link: "/#contactus"},
-                        { label: "Delegate Book", link: "delegate-book" },
+                        { label: "Home", link: "/#" },
+                        { label: "About", link: "/#about" },
+                        { label: "Timeline", link: "/#timeline" },
+                        { label: "Prizes", link: "/#prizes" },
+                        { label: "FAQ", link: "/#faq" },
+                        { label: "Contact Us", link: "/#contactus" },
+                        { label: "Initial Round Delegate Book", link: "delegate-book" },
                     ].map((item, index) => (
                         <a
                             key={index}
