@@ -14,7 +14,7 @@ const Initial = () => {
                 </span>
             </p>
 
-            <div className="flex flex-col items-center bg-transparent p-4 sm:p-6 md:p-8 rounded-xl shadow-lg">
+            <div className="flex w-screen flex-col items-center bg-transparent p-4 sm:p-6 md:p-8 rounded-xl shadow-lg">
                 <h2 className="text-lg sm:text-xl font-des font-semibold mb-4 sm:mb-6 tracking-widest">Initial Round Close In</h2>
                 <CountdownTimer targetDate="2024-08-24T16:00:15" />
             </div>

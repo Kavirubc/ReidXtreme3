@@ -111,11 +111,11 @@ const Navbar: React.FC = () => {
                             {item.label}
                         </a>
                     ))}
-                    <a
+                    {/* <a
                         href="/register"
                         className="reg-button mx-4 my-10 w-40 h-10 rounded-xl bg-green-900 border dark:border-white border-transparent text-white text-sm flex items-center justify-center">
                         Register now
-                    </a>
+                    </a> */}
                 </div>
             </div>
 
@@ -131,7 +131,7 @@ const Navbar: React.FC = () => {
                         { label: "Prizes", link: "/#prizes" },
                         { label: "FAQ", link: "/#faq" },
                         { label: "Contact Us", link: "/#contactus" },
-                        { label: "Register Now", link: "/register" },
+                     
                     ].map((item, index) => (
                         <a
                             key={index}
