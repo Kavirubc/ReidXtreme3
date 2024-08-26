@@ -42,11 +42,11 @@ const CountdownTimer: React.FC<CountdownProps> = ({ targetDate }) => {
     }, [timeLeft, targetDate]);
 
     if (timeLeft === null) {
-        return <div className="text-center text-3xl font-des">Loading...</div>;
+        return <div className="text-center max-w-screen text-3xl font-des">Loading...</div>;
     }
 
     return (
-        <div className="flex flex-nowrap justify-center gap-6 font-des tracking-wide">
+        <div className="flex flex-nowrap w-screen justify-center gap-6 font-des tracking-wide">
             <div className="text-center w-20 sm:w-28">
                 <span className="text-4xl sm:text-6xl font-bold">{timeLeft.days.toString().padStart(2, '0')}</span>
                 <p className="text-sm sm:text-base mt-1 sm:mt-2">Days</p>

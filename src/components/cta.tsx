@@ -32,12 +32,12 @@ export function CTA() {
           className="w-40 h-10 rounded-xl bg-green-900 border dark:border-white border-transparent text-white text-sm flex items-center justify-center">
           Register now
         </a> */}
-        <a
+        {/* <a
           href="https://drive.google.com/uc?export=download&id=1bR6leL9AbXQ-viQ9-zMXBA-VvX30HZtn"
           className="w-56 h-14 rounded-xl bg-green-900 border font-des text-center dark:border-white border-transparent text-white text-sm flex items-center justify-center cursor-pointer"
         >
           Initial Round Delegate Booklet
-        </a>
+        </a> */}
 
       </div>
     </div>

@@ -4,7 +4,7 @@ import Prizes from '../components/prize4';
 import FAQ from '../components/faq2';
 import Footer from '../components/footer2';
 import './styles.scss';
-import Navbar from "@/components/navbar3";
+import Navbar from "@/components/navbar2";
 import { Hero } from "@/components/hero";
 import { CTA } from "@/components/cta";
 import { Timeline } from "@/components/timeline2";
@@ -45,8 +45,8 @@ export default function Home() {
             <SponserCards />
             {/* <RegisterPage /> */}
             {/* <InitialBefore /> */}
-            <Initial />
-            {/* <InitialClosed /> */}
+            {/* <Initial /> */}
+            <InitialClosed />
             <FAQ />
             <Contact />
             <Footer />
