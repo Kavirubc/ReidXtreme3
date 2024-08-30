@@ -12,10 +12,7 @@ import { About } from "@/components/about";
 import Contact from "@/components/contact";
 import SponserCards from "@/components/sponsor3";
 import Preloader from '@/components/preloading';
-import RegisterPage from '@/components/register';
-import Initial from '@/components/initialround';
-import InitialBefore from '@/components/initailbefore';
-import InitialClosed from '@/components/regiclose';
+import FinalCount from '@/components/finalday';
 
 
 export default function Home() {
@@ -43,10 +40,7 @@ export default function Home() {
             <Timeline />
             <Prizes />
             <SponserCards />
-            {/* <RegisterPage /> */}
-            {/* <InitialBefore /> */}
-            {/* <Initial /> */}
-            <InitialClosed />
+            <FinalCount />
             <FAQ />
             <Contact />
             <Footer />
