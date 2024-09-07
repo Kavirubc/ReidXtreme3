@@ -53,7 +53,7 @@ const InitialStarts = () => {
                                 Final Round Ends In
                             </h2>
                             <CountdownTimer
-                                targetDate="2024-09-08T07:00:00" // Final round end time
+                                targetDate="2024-09-08T07:15:00" // Final round end time
                                 onComplete={() => setIsFinalRoundEnded(true)}
                             />
                         </div>
@@ -63,7 +63,7 @@ const InitialStarts = () => {
                                 Final Round Starts In
                             </h2>
                             <CountdownTimer
-                                targetDate="2024-09-07T19:00:00" //Final Round Start time
+                                targetDate="2024-09-07T19:15:00" //Final Round Start time
                                 onComplete={() => setIsInitialRoundStarted(true)}
                             />
                         </div>
