@@ -17,7 +17,8 @@ export default function Leaderboard() {
 
   const fetchLeaderboard = async () => {
     try {
-      const response = await axios.get('/api/final');
+      const timestamp = new Date().getTime();
+      const response = await axios.get(`/api/final?t=${timestamp}`);
       console.log('Leaderboard data:', response.data);
       setLeaderboard(response.data);
       setLoading(false);

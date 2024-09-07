@@ -59,9 +59,11 @@ function processData(responses: any[]) {
   return sortedTeams;
 }
 
-export async function GET() {
+export async function GET(request: Request) {
   try {
-    const url = "https://www.hackerrank.com/rest/contests/reidxtreme3-final-round/judge_submissions/?offset=0&limit=100000&_=1725742052865";
+    const { searchParams } = new URL(request.url);
+    const timestamp = searchParams.get('t') || Date.now();
+    const url = `https://www.hackerrank.com/rest/contests/reidxtreme3-final-round/judge_submissions/?offset=0&limit=100000&_=${timestamp}`;
     const data = await getResponse(url);
     if (!data || !data.models) {
       console.error('Invalid data received:', data);
