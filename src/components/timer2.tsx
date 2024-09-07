@@ -1,12 +1,13 @@
+'use client';
 import React, { useEffect, useState } from 'react';
 
 interface CountdownProps {
     targetDate: string;
+    onComplete?: () => void; // Optional callback function
 }
 
-const CountdownTimer: React.FC<CountdownProps> = ({ targetDate }) => {
+const CountdownTimer: React.FC<CountdownProps> = ({ targetDate, onComplete }) => {
     const [timeLeft, setTimeLeft] = useState<{
-        days: number;
         hours: number;
         minutes: number;
         seconds: number;
@@ -15,7 +16,6 @@ const CountdownTimer: React.FC<CountdownProps> = ({ targetDate }) => {
     const calculateTimeLeft = () => {
         const difference = +new Date(targetDate) - +new Date();
         let timeLeft = {
-            days: 0,
             hours: 0,
             minutes: 0,
             seconds: 0,
@@ -23,7 +23,6 @@ const CountdownTimer: React.FC<CountdownProps> = ({ targetDate }) => {
 
         if (difference > 0) {
             timeLeft = {
-                days: Math.floor(difference / (1000 * 60 * 60 * 24)),
                 hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
                 minutes: Math.floor((difference / 1000 / 60) % 60),
                 seconds: Math.floor((difference / 1000) % 60),
@@ -35,33 +34,42 @@ const CountdownTimer: React.FC<CountdownProps> = ({ targetDate }) => {
 
     useEffect(() => {
         const timer = setTimeout(() => {
-            setTimeLeft(calculateTimeLeft());
+            const newTimeLeft = calculateTimeLeft();
+            setTimeLeft(newTimeLeft);
+
+            // If the countdown has reached zero, call onComplete if provided
+            if (newTimeLeft.hours === 0 && newTimeLeft.minutes === 0 && newTimeLeft.seconds === 0) {
+                if (onComplete) onComplete();
+                clearTimeout(timer); // Stop the timer
+            }
         }, 1000);
 
         return () => clearTimeout(timer);
     }, [timeLeft, targetDate]);
 
     if (timeLeft === null) {
-        return <div className="text-center max-w-screen text-3xl font-des">Loading...</div>;
+        return <div className="text-center text-6xl font-des">Loading...</div>;
     }
 
     return (
-        <div className="flex flex-nowrap w-screen justify-center gap-6 font-des tracking-wide">
-            <div className="text-center w-20 sm:w-28">
-                <span className="text-4xl sm:text-6xl font-bold">{timeLeft.days.toString().padStart(2, '0')}</span>
-                <p className="text-sm sm:text-base mt-1 sm:mt-2">Days</p>
+        <div className="flex justify-center md:gap-24 gap-2 font-des tracking-widest">
+            <div className="text-center">
+                <span className="md:text-9xl text-4xl font-bold w-[100px] h-[100px] md:w-[140px] md:h-[120px] flex items-center justify-center">
+                    {timeLeft.hours.toString().padStart(2, '0')}
+                </span>
+                <p className="text-sm md:text-xl mt-1 md:mt-3">Hours</p>
             </div>
-            <div className="text-center w-20 sm:w-28">
-                <span className="text-4xl sm:text-6xl font-bold">{timeLeft.hours.toString().padStart(2, '0')}</span>
-                <p className="text-sm sm:text-base mt-1 sm:mt-2">Hours</p>
+            <div className="text-center">
+                <span className="md:text-9xl text-4xl font-bold w-[100px] h-[100px] md:w-[140px] md:h-[120px] flex items-center justify-center">
+                    {timeLeft.minutes.toString().padStart(2, '0')}
+                </span>
+                <p className="text-sm md:text-xl mt-1 md:mt-3">Minutes</p>
             </div>
-            <div className="text-center w-20 sm:w-28">
-                <span className="text-4xl sm:text-6xl font-bold">{timeLeft.minutes.toString().padStart(2, '0')}</span>
-                <p className="text-sm sm:text-base mt-1 sm:mt-2">Minutes</p>
-            </div>
-            <div className="text-center w-20 sm:w-28">
-                <span className="text-4xl sm:text-6xl font-bold">{timeLeft.seconds.toString().padStart(2, '0')}</span>
-                <p className="text-sm sm:text-base mt-1 sm:mt-2">Seconds</p>
+            <div className="text-center">
+                <span className="md:text-9xl text-4xl font-bold w-[100px] h-[100px] md:w-[140px] md:h-[120px] flex items-center justify-center">
+                    {timeLeft.seconds.toString().padStart(2, '0')}
+                </span>
+                <p className="text-sm md:text-xl mt-1 md:mt-3">Seconds</p>
             </div>
         </div>
     );

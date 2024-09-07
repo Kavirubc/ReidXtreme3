@@ -1,3 +1,4 @@
+'use client';
 import CountdownTimer from '../components/timer';
 import { Calendar, Clock, MapPin } from 'lucide-react';
 
